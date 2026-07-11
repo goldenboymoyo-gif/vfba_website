@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
-  { href: "/", label: "Home", isHome: true },
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/fighters", label: "Fighters" },
   { href: "/programmes", label: "Training" },
@@ -49,16 +49,11 @@ export default function Navigation() {
     };
   }, [isOpen]);
 
-  const handleHomeClick = useCallback(
-    (e: React.MouseEvent) => {
-      if (activePath === "/") {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        setIsOpen(false);
-      }
-    },
-    [activePath]
-  );
+  useEffect(() => {
+    if (isOpen) {
+      window.scrollTo({ top: 0 });
+    }
+  }, [isOpen]);
 
   const isActive = (href: string) => {
     if (href === "/") return activePath === "/";
@@ -78,7 +73,6 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link
               href="/"
-              onClick={handleHomeClick}
               className="flex items-center gap-3 group shrink-0"
             >
               <div className="relative w-8 h-8 md:w-10 md:h-10 shrink-0">
@@ -106,7 +100,6 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={link.isHome ? handleHomeClick : undefined}
                   className={`px-4 py-2 text-sm tracking-wide transition-colors duration-300 relative rounded-sm ${
                     isActive(link.href)
                       ? "text-gold bg-gold/10"
@@ -166,14 +159,7 @@ export default function Navigation() {
                 >
                   <Link
                     href={link.href}
-                    onClick={
-                      link.isHome
-                        ? (e) => {
-                            handleHomeClick(e);
-                            setIsOpen(false);
-                          }
-                        : () => setIsOpen(false)
-                    }
+                    onClick={() => setIsOpen(false)}
                     className={`block py-3 text-center font-display text-2xl transition-colors duration-300 rounded-sm ${
                       isActive(link.href)
                         ? "text-gold"
