@@ -1,0 +1,135 @@
+"use client";
+
+import AnimatedSection from "@/components/AnimatedSection";
+import ChapterTitle from "@/components/ChapterTitle";
+import { StoryCard } from "@/components/Cards";
+
+export default function NewsPage() {
+  const articles = [
+    {
+      title: "Packing a Punch: The True Story Behind Rise",
+      description:
+        "The Guardian profiles Tobias Mupfuti and the VFBA story that inspired the Oscar-eligible film.",
+      tag: "Press",
+      date: "December 2025",
+      image: "/images/rise-pro-still-1.jpg",
+      imageAlt: "Scene from Rise film",
+    },
+    {
+      title: "Rise — A Triumph of Zimbabwean Spirit",
+      description:
+        "We Love Short Films gives Rise a 5-star review, calling it a profound act of cinematic courage.",
+      tag: "Review",
+      date: "November 2025",
+      image: "/images/rise-pro-still-2.jpg",
+      imageAlt: "Rise film scene",
+    },
+    {
+      title: "Zimbabwe's RISE Debuts on Global Stage at Tribeca",
+      description:
+        "The Herald covers the world premiere of Rise at the Tribeca Film Festival.",
+      tag: "Film",
+      date: "June 2025",
+      image: "/images/rise-tribeca-laurel.png",
+      imageAlt: "Tribeca Official Selection laurel",
+    },
+    {
+      title: "Auditions Starring Hollywood Actor Chirisa Begin",
+      description:
+        "Zimbabwe Now reports on the casting of Tongayi Chirisa as Coach Tobias in Rise.",
+      tag: "Film",
+      date: "March 2023",
+      image: "/images/tobias-headshot.jpg",
+      imageAlt: "Coach Tobias Mupfuti headshot",
+    },
+    {
+      title: "VFBA Hosts Zimbabwe Boxing Federation National Open",
+      description:
+        "Victoria Falls Boxing Academy hosts the national open at its new gym facility.",
+      tag: "Tournament",
+      date: "June 2026",
+      image: "/images/vfba-training-1.jpg",
+      imageAlt: "Boxing training session",
+    },
+    {
+      title: "From Pain to Purpose: The Quiet Power of RISE",
+      description:
+        "Film & Television Business reviews Rise, calling it a triumph that punches far above its weight.",
+      tag: "Review",
+      date: "April 2025",
+      image: "/images/rise-pro-still-3.jpg",
+      imageAlt: "Rise production still",
+    },
+  ];
+
+  return (
+    <>
+      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
+              Updates
+            </span>
+            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+              News &
+              <br />
+              <span className="text-gradient-gold">Stories</span>
+            </h1>
+            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+              Press coverage, film reviews, and updates from the academy.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articles.map((article, i) => (
+              <StoryCard
+                key={article.title}
+                title={article.title}
+                description={article.description}
+                tag={article.tag}
+                image={article.image}
+                imageAlt={article.imageAlt}
+                delay={i * 0.1}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-charcoal-light/30">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <ChapterTitle
+            number="01"
+            title="Stay Connected"
+            subtitle="Follow VFBA for the latest news and updates."
+          />
+
+          <AnimatedSection>
+            <div className="flex justify-center gap-3">
+              <a
+                href="https://www.facebook.com/victoriafallsboxingacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 bg-rust text-cream text-sm rounded-sm hover:bg-rust-light transition-colors duration-300"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/victoriafallsboxingacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border border-cream/20 text-cream text-sm rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+              >
+                Instagram
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  );
+}
