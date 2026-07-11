@@ -109,8 +109,8 @@ export default function Navigation() {
                   onClick={link.isHome ? handleHomeClick : undefined}
                   className={`px-4 py-2 text-sm tracking-wide transition-colors duration-300 relative rounded-sm ${
                     isActive(link.href)
-                      ? "text-gold"
-                      : "text-dust hover:text-cream"
+                      ? "text-gold bg-gold/10"
+                      : "text-dust hover:text-cream hover:bg-cream/5"
                   }`}
                 >
                   {link.label}
@@ -174,7 +174,7 @@ export default function Navigation() {
                           }
                         : () => setIsOpen(false)
                     }
-                    className={`block py-3 text-center font-display text-2xl transition-colors duration-300 ${
+                    className={`block py-3 text-center font-display text-2xl transition-colors duration-300 rounded-sm ${
                       isActive(link.href)
                         ? "text-gold"
                         : "text-cream hover:text-gold"
