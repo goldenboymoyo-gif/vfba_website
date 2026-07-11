@@ -263,13 +263,13 @@ export default function SupportPage() {
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-6">
               Support VFBA
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl mx-auto">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl mx-auto">
               Support the Next
               <br />
               <span className="text-gradient-gold">Generation</span> Through
               Boxing
             </h1>
-            <p className="mt-6 text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-6 text-cream/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
               Every contribution helps Victoria Falls Boxing Academy provide a
               safe environment, coaching, mentorship, education support,
               equipment, and opportunities for young people who need it most.
@@ -298,8 +298,8 @@ export default function SupportPage() {
       </section>
 
       {/* Where Donations Make a Difference */}
-      <section id="impact" className="section-padding scroll-mt-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section id="impact" className="section scroll-mt-24">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="Where Your Donation Goes"
@@ -339,8 +339,8 @@ export default function SupportPage() {
       </section>
 
       {/* Transparency */}
-      <section className="section-padding bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="Transparency & Trust"
@@ -391,9 +391,9 @@ export default function SupportPage() {
       {/* Ways to Support */}
       <section
         id="ways-to-support"
-        className="section-padding scroll-mt-24"
+        className="section scroll-mt-24"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="site-container">
           <ChapterTitle
             number="03"
             title="Ways to Support"
@@ -450,8 +450,8 @@ export default function SupportPage() {
       </section>
 
       {/* Payment Methods */}
-      <section className="section-padding bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="04"
             title="How to Donate"
@@ -514,9 +514,9 @@ export default function SupportPage() {
       {/* Volunteer */}
       <section
         id="volunteer"
-        className="section-padding scroll-mt-24"
+        className="section scroll-mt-24"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="site-container">
           <ChapterTitle
             number="05"
             title="Volunteer"
@@ -525,7 +525,7 @@ export default function SupportPage() {
 
           <AnimatedSection>
             <div className="max-w-3xl space-y-6">
-              <p className="text-cream/90 text-lg leading-relaxed">
+              <p className="text-cream/90 text-base leading-relaxed">
                 VFBA welcomes volunteers who want to contribute their time and
                 skills. Whether you&apos;re a coach, teacher, builder,
                 photographer, or simply someone who wants to help — there is a
@@ -555,9 +555,9 @@ export default function SupportPage() {
       {/* Partner */}
       <section
         id="partner"
-        className="section-padding bg-charcoal-light/30 scroll-mt-24"
+        className="section bg-charcoal-light/30 scroll-mt-24"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="site-container">
           <ChapterTitle
             number="06"
             title="Partner With Us"
@@ -566,7 +566,7 @@ export default function SupportPage() {
 
           <AnimatedSection>
             <div className="max-w-3xl space-y-6">
-              <p className="text-cream/90 text-lg leading-relaxed">
+              <p className="text-cream/90 text-base leading-relaxed">
                 VFBA is actively seeking partnerships with organisations that
                 share our commitment to youth development, sport for social
                 change, and community building.
@@ -589,8 +589,8 @@ export default function SupportPage() {
       </section>
 
       {/* Other Ways to Help */}
-      <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="07"
             title="Other Ways to Help"
@@ -622,8 +622,8 @@ export default function SupportPage() {
       </section>
 
       {/* Quote / Emotional Close */}
-      <section className="section-padding bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container text-center">
           <AnimatedSection>
             <span className="text-gold/60 text-xs tracking-[0.4em] uppercase block mb-6">
               In Tobias&apos;s Words
@@ -646,15 +646,15 @@ export default function SupportPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <AnimatedSection>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream mb-6">
               Be part of what
               <br />
               <span className="text-gradient-gold">happens next</span>
             </h2>
-            <p className="text-dust text-lg max-w-xl mx-auto mb-10">
+            <p className="text-dust text-base max-w-xl mx-auto mb-10">
               He fought to survive. Now he teaches others to. Help VFBA
               continue the fight — one child, one punch, one future at a time.
             </p>

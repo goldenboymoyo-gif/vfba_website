@@ -40,18 +40,18 @@ export function StoryCard({ title, description, href, image, imageAlt, tag, dela
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
         </div>
       )}
-      <div className="p-6 flex flex-col flex-1">
+      <div className="p-7 flex flex-col flex-1">
         {tag && (
-          <span className="text-gold text-xs tracking-[0.2em] uppercase mb-3 block">
+          <span className="text-gold text-xs tracking-[0.2em] uppercase mb-4 block">
             {tag}
           </span>
         )}
-        <h3 className="font-display text-xl text-cream mb-3 group-hover:text-gold transition-colors duration-300">
+        <h3 className="font-display text-xl text-cream mb-4 group-hover:text-gold transition-colors duration-300">
           {title}
         </h3>
         <p className="text-dust text-sm leading-relaxed flex-1">{description}</p>
         {href && (
-          <div className="mt-5 pt-4 border-t border-charcoal-lighter flex items-center gap-2 text-gold text-sm group-hover:gap-3 transition-all duration-300">
+          <div className="mt-6 pt-4 border-t border-charcoal-lighter flex items-center gap-2 text-gold text-sm group-hover:gap-3 transition-all duration-300">
             <span>Read more</span>
             <FiArrowRight size={14} />
           </div>

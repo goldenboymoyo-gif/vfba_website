@@ -11,19 +11,19 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
+      <section className="relative page-hero">
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal/90 to-charcoal" />
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div className="site-container relative">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Our Story
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               A place where
               <br />
               <span className="text-gradient-gold">hope</span> fights back.
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Victoria Falls Boxing Academy is not a gym — it is a true story
               that became a home, a refuge, and a future for children who had
               neither.
@@ -33,18 +33,18 @@ export default function AboutPage() {
       </section>
 
       {/* The Beginning */}
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="From Streets to Ring"
             subtitle="Tobias Mupfuti was abandoned as a child. He survived on the streets of Victoria Falls. Boxing saved his life — and he decided to do the same for others."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   Tobias Mupfuti was eight years old when he found himself
                   homeless in Victoria Falls. His father had rejected him. His
                   mother was too poor to feed him, clothe him, or send him to
@@ -108,8 +108,8 @@ export default function AboutPage() {
       </section>
 
       {/* Growth */}
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="Growing Into a Home"
@@ -152,8 +152,8 @@ export default function AboutPage() {
       </section>
 
       {/* Impact Stats */}
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <StatsRow
             stats={[
               { number: "40+", label: "Children Training" },
@@ -166,8 +166,8 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Meet the man behind the story
           </h2>

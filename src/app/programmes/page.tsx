@@ -8,18 +8,18 @@ import Image from "next/image";
 export default function ProgrammesPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Training
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Boxing
               <br />
               <span className="text-gradient-gold">Programmes</span>
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Professional coaching for children and adults. From beginners to
               competitive fighters — VFBA is open to the community.
             </p>
@@ -27,18 +27,18 @@ export default function ProgrammesPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="Youth Programme"
             subtitle="Free training for underprivileged children — the heart of VFBA."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   VFBA&apos;s youth programme is the foundation of everything we do.
                   Approximately 40 children train for free, learning not just
                   boxing technique but discipline, perseverance, and respect.
@@ -105,8 +105,8 @@ export default function ProgrammesPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="Community Gym"
@@ -114,9 +114,9 @@ export default function ProgrammesPage() {
           />
 
           <AnimatedSection>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
               <div className="max-w-3xl">
-                <p className="text-cream/90 text-lg leading-relaxed mb-6">
+                <p className="text-cream/90 text-base leading-relaxed mb-6">
                   The VFBA gym is open to the public. Adults pay a small fee to use
                   the facilities — and those funds go directly toward supporting the
                   children&apos;s programme and the children&apos;s home.
@@ -149,8 +149,8 @@ export default function ProgrammesPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="03"
             title="Fitness & Personal Training"
@@ -158,7 +158,7 @@ export default function ProgrammesPage() {
           />
 
           <AnimatedSection>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter order-2 lg:order-1">
                 <Image
                   src="/images/vfba-community-1.jpg"
@@ -169,7 +169,7 @@ export default function ProgrammesPage() {
                 />
               </div>
               <div className="max-w-3xl order-1 lg:order-2">
-                <p className="text-cream/90 text-lg leading-relaxed mb-6">
+                <p className="text-cream/90 text-base leading-relaxed mb-6">
                   VFBA offers personal training sessions and fitness boxing for
                   adults looking to improve their health, learn self-defence,
                   and support a worthy cause.
@@ -195,8 +195,8 @@ export default function ProgrammesPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Train with us
           </h2>

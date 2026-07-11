@@ -101,16 +101,16 @@ export default function GalleryPage() {
 
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Visual Archive
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Gallery
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Authentic images from the gym, the children&apos;s home, tournaments,
               community events, and the Rise film — real moments, real people.
             </p>
@@ -118,8 +118,8 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           {/* Category Filters */}
           <div className="flex flex-wrap gap-2 mb-12">
             {categories.map((cat) => (
@@ -174,8 +174,8 @@ export default function GalleryPage() {
       </section>
 
       {/* Video Section */}
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container text-center">
           <ChapterTitle
             number="01"
             title="Video Content"

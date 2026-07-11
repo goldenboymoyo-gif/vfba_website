@@ -18,18 +18,18 @@ const InteractiveMap = dynamic(() => import("@/components/InteractiveMap"), {
 export default function ContactPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Find Us
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Visit &
               <br />
               <span className="text-gradient-gold">Contact</span>
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Come train with us, visit the gym, or get in touch. VFBA is open
               to the community and to visitors from around the world.
             </p>
@@ -37,9 +37,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="section">
+        <div className="site-container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <ChapterTitle
                 number="01"
@@ -148,8 +148,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container text-center">
           <ChapterTitle
             number="03"
             title="For Press & Film Enquiries"

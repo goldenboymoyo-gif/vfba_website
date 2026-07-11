@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function CoachTobiasPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative page-hero overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/rise-tobias-landscape.jpg"
@@ -20,17 +20,17 @@ export default function CoachTobiasPage() {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal/80 to-charcoal" />
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div className="site-container relative">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               The Founder
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Tobias
               <br />
               <span className="text-gradient-gold">Mupfuti</span>
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Founder, head coach, and the heart of Victoria Falls Boxing
               Academy. A man who turned his own pain into purpose — and gave
               children like him a fighting chance.
@@ -39,18 +39,18 @@ export default function CoachTobiasPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="A Fighter Before the Ring"
             subtitle="Before he was a coach, Tobias was a survivor."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   Tobias Mupfuti was eight years old when his father rejected him
                   and his mother could no longer provide. He found himself
                   homeless on the streets of Victoria Falls, surviving on
@@ -84,15 +84,15 @@ export default function CoachTobiasPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="The Coach"
             subtitle="He doesn't just teach boxing. He teaches children how to believe in themselves."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <Quote
                 quote="The academy is helping underprivileged children to attend education, provide them with shelter and give them food. We try by every means so that they do not have time to go to the streets."
@@ -103,7 +103,7 @@ export default function CoachTobiasPage() {
 
             <AnimatedSection delay={0.2}>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   Today, Tobias runs VFBA with his wife Shuvai. They take in
                   homeless children, train them in boxing, send them to school,
                   and give them a home. About 40 children train for free at the
@@ -146,8 +146,8 @@ export default function CoachTobiasPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="03"
             title="In His Own Words"
@@ -156,7 +156,7 @@ export default function CoachTobiasPage() {
 
           <AnimatedSection>
             <div className="max-w-3xl mx-auto">
-              <p className="text-cream/90 text-lg leading-relaxed mb-6">
+              <p className="text-cream/90 text-base leading-relaxed mb-6">
                 When Jessica J. Rowlands, who grew up in Victoria Falls, heard
                 Tobias&apos;s story, she wrote the screenplay for Rise. Hollywood
                 actor Tongayi Chirisa was cast as Coach Tobias, and an
@@ -179,8 +179,8 @@ export default function CoachTobiasPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Help Tobias continue his work
           </h2>

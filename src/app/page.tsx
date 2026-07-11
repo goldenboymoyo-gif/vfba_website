@@ -141,15 +141,15 @@ function HeroSection() {
 
 function AboutSection() {
   return (
-    <section className="relative section-spacing-lg">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative section-lg">
+      <div className="site-container">
         <ChapterTitle
           number="01"
           title="What is VFBA?"
           subtitle="Victoria Falls Boxing Academy is not just a gym — it is a home, a refuge, and a future for children who had neither."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <AnimatedSection direction="left">
             <div className="space-y-6">
               <p className="text-cream/90 text-base leading-relaxed">
@@ -214,8 +214,8 @@ function FightersShowcase() {
   const showcaseFighters = fighters.filter((f) => f.slug !== "tobias-mupfuti");
 
   return (
-    <section className="relative section-spacing bg-charcoal-light/30 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative section bg-charcoal-light/30 overflow-hidden">
+      <div className="site-container">
         <ChapterTitle
           number="02"
           title="Our Fighters"
@@ -260,7 +260,7 @@ function FightersShowcase() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <CTAButton href="/fighters" variant="secondary" showArrow>
             View All Fighters
           </CTAButton>
@@ -272,8 +272,8 @@ function FightersShowcase() {
 
 function TrainingSection() {
   return (
-    <section className="relative section-spacing">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative section">
+      <div className="site-container">
         <ChapterTitle
           number="03"
           title="Training Programmes"
@@ -294,8 +294,8 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiBox size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-5">
-                <h3 className="font-display text-lg text-cream mb-2">
+              <div className="p-6">
+                <h3 className="font-display text-lg text-cream mb-3">
                   Youth Programme
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
@@ -319,8 +319,8 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiUsers size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-5">
-                <h3 className="font-display text-lg text-cream mb-2">
+              <div className="p-6">
+                <h3 className="font-display text-lg text-cream mb-3">
                   Community Gym
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
@@ -343,8 +343,8 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiTarget size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-5">
-                <h3 className="font-display text-lg text-cream mb-2">
+              <div className="p-6">
+                <h3 className="font-display text-lg text-cream mb-3">
                   Competitive Boxing
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
@@ -367,8 +367,8 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiHeart size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-5">
-                <h3 className="font-display text-lg text-cream mb-2">
+              <div className="p-6">
+                <h3 className="font-display text-lg text-cream mb-3">
                   Fitness Boxing
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
@@ -391,8 +391,8 @@ function TrainingSection() {
 
 function AcademyStatsSection() {
   return (
-    <section className="relative section-spacing-lg bg-charcoal-light/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative section-lg bg-charcoal-light/30">
+      <div className="site-container">
         <ChapterTitle
           number="04"
           title="The Academy Today"
@@ -408,7 +408,7 @@ function AcademyStatsSection() {
           ]}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           <StoryCard
             title="The Gym"
             description="A purpose-built boxing arena in Chinotimba, Victoria Falls — one of the biggest gyms in the city. Open to the community, funding the children's home."
@@ -452,15 +452,15 @@ function GymLifeSection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -30]);
 
   return (
-    <section ref={ref} className="relative section-spacing overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section ref={ref} className="relative section overflow-hidden">
+      <div className="site-container">
         <ChapterTitle
           number="05"
           title="Gym Life"
           subtitle="Inside the VFBA gym — where discipline meets community, and every session is a step toward something greater."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
           <AnimatedSection delay={0} className="col-span-2 row-span-2">
             <motion.div style={{ y: y1 }} className="relative aspect-square bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group">
               <Image
@@ -552,7 +552,7 @@ function GymLifeSection() {
           </AnimatedSection>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <CTAButton href="/gallery" variant="secondary" showArrow>
             Explore Full Gallery
           </CTAButton>
@@ -564,10 +564,10 @@ function GymLifeSection() {
 
 function MissionSection() {
   return (
-    <section className="relative section-spacing overflow-hidden bg-charcoal-light/30">
+    <section className="relative section overflow-hidden bg-charcoal-light/30">
       <div className="absolute inset-0 bg-gradient-to-r from-rust/5 to-green/5" />
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      <div className="site-container relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <AnimatedSection>
             <Quote
               quote="We try by every means so that they do not have time to go to the streets. After training, they are tired; they do their homework and sleep. It was not easy in the streets. I thought of giving hope to those children rejected by their families."
@@ -615,10 +615,10 @@ function RiseSection() {
   const scale = useTransform(scrollYProgress, [0, 0.5], [0.96, 1]);
 
   return (
-    <section ref={ref} className="relative section-spacing">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section ref={ref} className="relative section">
+      <div className="site-container">
         <AnimatedSection>
-          <div className="max-w-3xl mx-auto text-center mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-10">
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               The Story Behind Rise
             </span>
@@ -714,8 +714,8 @@ function SocialSection() {
   ];
 
   return (
-    <section className="section-spacing bg-charcoal-light/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <section className="section bg-charcoal-light/30">
+      <div className="site-container text-center">
         <AnimatedSection>
           <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
             Follow VFBA
@@ -729,7 +729,7 @@ function SocialSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
           {socials.map((social, i) => (
             <AnimatedSection key={social.label} delay={i * 0.08}>
               <a
@@ -754,8 +754,8 @@ function SocialSection() {
 
 function SupportSection() {
   return (
-    <section className="relative section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <section className="relative section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <div className="site-container text-center">
         <ChapterTitle
           number="06"
           title="Be Part of What Happens Next"
@@ -763,7 +763,7 @@ function SupportSection() {
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           <StoryCard
             title="Donate"
             description="Fund training equipment, school fees, meals, and shelter for children who need it most."
@@ -787,7 +787,7 @@ function SupportSection() {
           />
         </div>
 
-        <div className="mt-16">
+        <div className="mt-12">
           <CTAButton href="/support" size="lg" showArrow>
             Support VFBA
           </CTAButton>

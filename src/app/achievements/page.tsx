@@ -8,16 +8,16 @@ import Image from "next/image";
 export default function AchievementsPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Recognition
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Achievements
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               From local tournaments to the world stage — VFBA&apos;s journey in
               numbers and recognition.
             </p>
@@ -25,8 +25,8 @@ export default function AchievementsPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <StatsRow
             stats={[
               { number: "19+", label: "Film Awards" },
@@ -90,8 +90,8 @@ export default function AchievementsPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="Boxing Achievements"

@@ -26,9 +26,9 @@ export default function FightersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
+      <section className="relative page-hero">
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal/90 to-charcoal" />
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div className="site-container relative">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               VFBA Fighters
@@ -48,9 +48,9 @@ export default function FightersPage() {
       </section>
 
       {/* Coach Section */}
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <AnimatedSection direction="left">
               <div className="relative aspect-[4/5] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter max-w-md">
                 <Image
@@ -108,8 +108,8 @@ export default function FightersPage() {
       </section>
 
       {/* Fighters Grid */}
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="The Roster"
@@ -175,8 +175,8 @@ export default function FightersPage() {
       </section>
 
       {/* Fighter Spotlight Quote */}
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container text-center">
           <AnimatedSection>
             <span className="text-gold/60 text-xs tracking-[0.4em] uppercase block mb-6">
               VFBA Spirit
@@ -192,8 +192,8 @@ export default function FightersPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-3xl md:text-4xl text-cream mb-6">
             Want to fight for VFBA?
           </h2>

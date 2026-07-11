@@ -9,18 +9,18 @@ import Image from "next/image";
 export default function CommunityImpactPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Impact
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Changing lives,
               <br />
               <span className="text-gradient-gold">one punch at a time.</span>
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               VFBA is the most active boxing club in Matabeleland North province.
               It is more than a gym — it is a community lifeline.
             </p>
@@ -28,8 +28,8 @@ export default function CommunityImpactPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <StatsRow
             stats={[
               { number: "40+", label: "Children Training" },
@@ -55,10 +55,10 @@ export default function CommunityImpactPage() {
             subtitle="The practical, protective function of training — keeping children occupied, tired, and purposeful."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   In Victoria Falls, nearly 5 million children live in poverty in
                   Zimbabwe, with 1.6 million in extreme poverty. Without
                   intervention, the streets, drugs, and crime await.
@@ -94,8 +94,8 @@ export default function CommunityImpactPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="What We Provide"
@@ -142,8 +142,8 @@ export default function CommunityImpactPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Make an impact
           </h2>

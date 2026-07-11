@@ -8,13 +8,13 @@ import CTAButton from "@/components/CTAButton";
 export default function MissionPage() {
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               Purpose
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Mission &
               <br />
               <span className="text-gradient-gold">Vision</span>
@@ -23,9 +23,9 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="section">
+        <div className="site-container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="bg-charcoal-light/50 border border-charcoal-lighter rounded-sm p-8 md:p-12">
                 <span className="text-gold text-xs tracking-[0.3em] uppercase">
@@ -66,8 +66,8 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="What We Believe"
@@ -116,8 +116,8 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <AnimatedSection>
             <Quote
               quote="He fought to survive. Now he teaches others to."
@@ -127,8 +127,8 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Join our mission
           </h2>

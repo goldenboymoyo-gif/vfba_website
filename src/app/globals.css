@@ -246,65 +246,80 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
 
-  .section-spacing {
+  /* ===== SPACING SYSTEM ===== */
+
+  /* Container — max 1280px, responsive horizontal padding */
+  .site-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .site-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .site-container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  /* Section — standard vertical spacing: 64/96/128px */
+  .section {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
   @media (min-width: 768px) {
-    .section-spacing {
+    .section {
       padding-top: 6rem;
       padding-bottom: 6rem;
     }
   }
   @media (min-width: 1024px) {
-    .section-spacing {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-    }
-  }
-
-  .section-spacing-lg {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  @media (min-width: 768px) {
-    .section-spacing-lg {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .section-spacing-lg {
+    .section {
       padding-top: 8rem;
       padding-bottom: 8rem;
     }
   }
 
-  .section-padding {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  /* Section Large — more breathing room: 80/120/144px */
+  .section-lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   @media (min-width: 768px) {
-    .section-padding {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+    .section-lg {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
     }
   }
   @media (min-width: 1024px) {
-    .section-padding {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+    .section-lg {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
     }
   }
 
-  .hero-top-padding {
-    padding-top: 6rem;
+  /* Page Hero — inner page hero top spacing */
+  .page-hero {
+    padding-top: 8rem;
     padding-bottom: 4rem;
   }
   @media (min-width: 768px) {
-    .hero-top-padding {
-      padding-top: 8rem;
+    .page-hero {
+      padding-top: 10rem;
       padding-bottom: 6rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .page-hero {
+      padding-top: 12rem;
+      padding-bottom: 8rem;
     }
   }
 }

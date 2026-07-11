@@ -38,16 +38,16 @@ export default function RiseFilmPage() {
 
   return (
     <>
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative page-hero">
+        <div className="site-container">
           <AnimatedSection>
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               The Film
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-9xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               RISE
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               The first Zimbabwean film ever selected for the Tribeca Film
               Festival. Oscar-eligible. 19+ awards worldwide. A true story that
               reached the world.
@@ -57,8 +57,8 @@ export default function RiseFilmPage() {
       </section>
 
       {/* Trailer / Poster */}
-      <section className="py-12 md:py-20">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="max-w-5xl mx-auto px-5 md:px-8 lg:px-12">
           <AnimatedSection>
             <div className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer">
               <div className="absolute inset-0">
@@ -92,18 +92,18 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="01"
             title="The Story"
             subtitle="A boy living on a rubbish dump convinces a reclusive boxing coach to teach him to fight — and changes both their lives."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-6">
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   Rise follows a young boy named Rise, who lives alone on a
                   rubbish dump in Zimbabwe and survives by his determination and
                   resilience. After being attacked by local bullies, he is noticed
@@ -165,8 +165,8 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="02"
             title="Awards & Recognition"
@@ -206,8 +206,8 @@ export default function RiseFilmPage() {
       </section>
 
       {/* Interviews & Behind the Scenes */}
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="03"
             title="Interviews & Behind the Scenes"
@@ -285,8 +285,8 @@ export default function RiseFilmPage() {
         />
       )}
 
-      <section className="section-spacing bg-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section bg-charcoal-light/30">
+        <div className="site-container">
           <ChapterTitle
             number="04"
             title="Production"
@@ -295,7 +295,7 @@ export default function RiseFilmPage() {
 
           <AnimatedSection>
             <div className="max-w-3xl space-y-6">
-              <p className="text-cream/90 text-lg leading-relaxed">
+              <p className="text-cream/90 text-base leading-relaxed">
                 Rise was written and directed by Jessica J. Rowlands, who grew up
                 between the UK and Victoria Falls and has twice won the UCLA
                 Screenwriting Award. Produced by Joe Njagu, whose earlier feature
@@ -318,8 +318,8 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="section">
+        <div className="site-container">
           <ChapterTitle
             number="05"
             title="Film Stills"
@@ -348,12 +348,12 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             The story behind the film is real
           </h2>
-          <p className="text-dust text-lg max-w-xl mx-auto mb-8">
+          <p className="text-dust text-base max-w-xl mx-auto mb-8">
             VFBA exists because of Tobias Mupfuti. Support the academy that
             inspired Rise.
           </p>
