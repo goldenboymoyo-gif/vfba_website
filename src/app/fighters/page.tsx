@@ -33,12 +33,12 @@ export default function FightersPage() {
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               VFBA Fighters
             </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
               Meet the
               <br />
               <span className="text-gradient-gold">fighters.</span>
             </h1>
-            <p className="mt-6 text-dust text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Every fighter at VFBA has a story. These are the athletes who train,
               compete, and represent Victoria Falls Boxing Academy on the national
               and international stage.
@@ -76,12 +76,12 @@ export default function FightersPage() {
                 <span className="text-gold/70 text-xs tracking-[0.4em] uppercase block">
                   The Heart Behind VFBA
                 </span>
-                <h2 className="font-display text-4xl md:text-5xl font-bold text-cream leading-tight">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight">
                   The man who
                   <br />
                   <span className="text-gradient-gold">built champions.</span>
                 </h2>
-                <p className="text-cream/90 text-lg leading-relaxed">
+                <p className="text-cream/90 text-base leading-relaxed">
                   {coach.story}
                 </p>
                 <div className="grid grid-cols-2 gap-4 pt-4">
@@ -93,7 +93,7 @@ export default function FightersPage() {
                   ))}
                 </div>
                 <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-6 mt-6">
-                  <p className="font-display text-lg text-cream/80 italic leading-relaxed">
+                  <p className="font-display text-base text-cream/80 italic leading-relaxed">
                     &ldquo;{coach.quote}&rdquo;
                   </p>
                   <span className="text-gold text-sm mt-3 block">— {coach.name}</span>
@@ -151,7 +151,7 @@ export default function FightersPage() {
                     <span className="text-rust-light text-xs tracking-[0.3em] uppercase block mb-2">
                       {fighter.weightClass}
                     </span>
-                    <h3 className="font-display text-2xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
+                    <h3 className="font-display text-xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
                       {fighter.name}
                     </h3>
                     <span className="text-dust text-sm">&ldquo;{fighter.nickname}&rdquo;</span>
@@ -181,7 +181,7 @@ export default function FightersPage() {
             <span className="text-gold/60 text-xs tracking-[0.4em] uppercase block mb-6">
               VFBA Spirit
             </span>
-            <blockquote className="font-display text-3xl md:text-4xl lg:text-5xl text-cream/90 leading-snug max-w-3xl mx-auto italic">
+            <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl text-cream/90 leading-snug max-w-3xl mx-auto italic">
               &ldquo;Every child deserves a chance. Every punch thrown is a step forward.&rdquo;
             </blockquote>
             <div className="mt-8">
@@ -194,10 +194,10 @@ export default function FightersPage() {
       {/* CTA */}
       <section className="section-padding bg-gradient-to-b from-charcoal to-charcoal-light/30">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
+          <h2 className="font-display text-3xl md:text-4xl text-cream mb-6">
             Want to fight for VFBA?
           </h2>
-          <p className="text-dust text-lg max-w-xl mx-auto mb-8">
+          <p className="text-dust text-base max-w-xl mx-auto mb-8">
             VFBA is always looking for dedicated athletes. Whether you&apos;re a
             beginner or an experienced fighter — there is a place for you.
           </p>
@@ -250,7 +250,7 @@ export default function FightersPage() {
                   <h2 className="font-display text-3xl md:text-4xl text-cream mb-1">
                     {selectedFighter.name}
                   </h2>
-                  <span className="text-dust text-lg mb-6">
+                  <span className="text-dust text-base mb-6">
                     &ldquo;{selectedFighter.nickname}&rdquo;
                   </span>
 

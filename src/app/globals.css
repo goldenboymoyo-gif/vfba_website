@@ -247,64 +247,64 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .section-spacing {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   @media (min-width: 768px) {
     .section-spacing {
-      padding-top: 9rem;
-      padding-bottom: 9rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
     }
   }
   @media (min-width: 1024px) {
     .section-spacing {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
     }
   }
 
   .section-spacing-lg {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-  @media (min-width: 768px) {
-    .section-spacing-lg {
-      padding-top: 11rem;
-      padding-bottom: 11rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .section-spacing-lg {
-      padding-top: 12rem;
-      padding-bottom: 12rem;
-    }
-  }
-
-  .section-padding {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
   @media (min-width: 768px) {
-    .section-padding {
+    .section-spacing-lg {
       padding-top: 7rem;
       padding-bottom: 7rem;
     }
   }
   @media (min-width: 1024px) {
-    .section-padding {
+    .section-spacing-lg {
       padding-top: 8rem;
       padding-bottom: 8rem;
     }
   }
 
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
   .hero-top-padding {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
   }
   @media (min-width: 768px) {
     .hero-top-padding {
-      padding-top: 10rem;
-      padding-bottom: 8rem;
+      padding-top: 8rem;
+      padding-bottom: 6rem;
     }
   }
 }

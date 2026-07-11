@@ -79,7 +79,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-cream leading-[0.95] max-w-5xl"
+          className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-cream leading-[0.95] max-w-5xl"
         >
           Building champions
           <br />
@@ -92,7 +92,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-8 text-dust text-lg md:text-xl max-w-xl leading-relaxed"
+          className="mt-8 text-dust text-base md:text-lg max-w-xl leading-relaxed"
         >
           A professional boxing academy and children&apos;s home in Victoria Falls,
           Zimbabwe — developing fighters, building discipline, and changing lives.
@@ -152,7 +152,7 @@ function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           <AnimatedSection direction="left">
             <div className="space-y-6">
-              <p className="text-cream/90 text-lg leading-relaxed">
+              <p className="text-cream/90 text-base leading-relaxed">
                 Victoria Falls Boxing Academy was born from one man&apos;s fight
                 to survive. Tobias Mupfuti was abandoned as a child, homeless on
                 the streets of Victoria Falls. Boxing gave him structure. It gave
@@ -238,7 +238,7 @@ function FightersShowcase() {
                     <span className="text-rust-light text-xs tracking-[0.3em] uppercase block mb-1">
                       {fighter.weightClass}
                     </span>
-                    <h3 className="font-display text-2xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
+                    <h3 className="font-display text-xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
                       {fighter.name}
                     </h3>
                     <span className="text-dust text-sm">&ldquo;{fighter.nickname}&rdquo;</span>
@@ -578,14 +578,14 @@ function MissionSection() {
 
           <AnimatedSection delay={0.2}>
             <div className="space-y-6">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-cream leading-tight">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight">
                 Boxing is not
                 <br />
                 <span className="text-gradient-gold">violence.</span>
                 <br />
                 It&apos;s structure.
               </h2>
-              <p className="text-dust text-lg leading-relaxed">
+              <p className="text-dust text-base leading-relaxed">
                 Self-confidence. Perseverance. Respect. At VFBA, boxing is a
                 vehicle for instilling the discipline and resilience that young
                 people need to build a life — not just survive one.
@@ -622,12 +622,12 @@ function RiseSection() {
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
               The Story Behind Rise
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-cream leading-tight mb-6">
               The documentary that
               <br />
               <span className="text-gradient-gold">reached the world.</span>
             </h2>
-            <p className="text-dust text-lg leading-relaxed">
+            <p className="text-dust text-base leading-relaxed">
               Victoria Falls Boxing Academy inspired the film Rise — the first
               Zimbabwean film ever selected for the Tribeca Film Festival.
               Oscar-eligible. 19+ awards worldwide.
@@ -665,7 +665,7 @@ function RiseSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
           <AnimatedSection delay={0}>
             <div className="text-center">
-              <span className="font-display text-2xl font-bold text-gradient-gold">
+              <span className="font-display text-lg font-bold text-gradient-gold">
                 Tribeca 2025
               </span>
               <span className="block mt-2 text-dust text-sm">
@@ -675,7 +675,7 @@ function RiseSection() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="text-center">
-              <span className="font-display text-2xl font-bold text-gradient-gold">
+              <span className="font-display text-lg font-bold text-gradient-gold">
                 Oscar Eligible
               </span>
               <span className="block mt-2 text-dust text-sm">
@@ -685,7 +685,7 @@ function RiseSection() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="text-center">
-              <span className="font-display text-2xl font-bold text-gradient-gold">
+              <span className="font-display text-lg font-bold text-gradient-gold">
                 19+ Awards
               </span>
               <span className="block mt-2 text-dust text-sm">
@@ -720,10 +720,10 @@ function SocialSection() {
           <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
             Follow VFBA
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-cream leading-tight mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight mb-4">
             Stay connected
           </h2>
-          <p className="text-dust text-lg max-w-xl mx-auto mb-12">
+          <p className="text-dust text-base max-w-xl mx-auto mb-10">
             Training highlights, tournament results, community events, and
             behind-the-scenes content from the gym.
           </p>
