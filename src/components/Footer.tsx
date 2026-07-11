@@ -15,12 +15,12 @@ const footerLinks = {
     { href: "/community-impact", label: "Community Impact" },
   ],
   discover: [
+    { href: "/fighters", label: "Our Fighters" },
     { href: "/rise-film", label: "The Rise Film" },
     { href: "/achievements", label: "Achievements" },
     { href: "/tournaments", label: "Tournaments & Events" },
     { href: "/gallery", label: "Gallery" },
     { href: "/news", label: "News & Stories" },
-    { href: "/partners", label: "Partners & Sponsors" },
   ],
   support: [
     { href: "/support", label: "Donate" },
@@ -33,7 +33,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-charcoal border-t border-charcoal-lighter">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -57,8 +57,8 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-dust text-sm leading-relaxed mb-6">
-              A place where discipline, resilience, and hope transform young
-              lives through boxing in Victoria Falls, Zimbabwe.
+              Developing fighters, building discipline, and changing lives
+              through boxing in Victoria Falls, Zimbabwe.
             </p>
             <div className="flex gap-4">
               <a
@@ -187,7 +187,7 @@ export default function Footer() {
               All rights reserved.
             </p>
             <p className="text-dust/40 text-xs text-center md:text-right">
-              He fought to survive. Now he teaches others to.
+              Building champions inside &amp; outside the ring.
             </p>
           </div>
         </div>

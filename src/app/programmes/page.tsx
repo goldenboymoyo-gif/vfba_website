@@ -150,6 +150,52 @@ export default function ProgrammesPage() {
       </section>
 
       <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <ChapterTitle
+            number="03"
+            title="Fitness & Personal Training"
+            subtitle="Boxing for fitness, personal training, and holistic wellbeing."
+          />
+
+          <AnimatedSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter order-2 lg:order-1">
+                <Image
+                  src="/images/vfba-community-1.jpg"
+                  alt="VFBA fitness training"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="max-w-3xl order-1 lg:order-2">
+                <p className="text-cream/90 text-lg leading-relaxed mb-6">
+                  VFBA offers personal training sessions and fitness boxing for
+                  adults looking to improve their health, learn self-defence,
+                  and support a worthy cause.
+                </p>
+                <p className="text-dust leading-relaxed mb-6">
+                  The gym features a full-size boxing ring, heavy bags, speed
+                  bags, and a complete fitness area. There is also a private
+                  room used for meditation and yoga sessions — reflecting
+                  Tobias&apos;s holistic approach to physical and mental
+                  wellbeing.
+                </p>
+                <p className="text-dust leading-relaxed mb-8">
+                  Every fee paid by adult members goes directly toward funding
+                  the children&apos;s programme — meals, school fees, shelter,
+                  and equipment.
+                </p>
+                <CTAButton href="/contact" showArrow>
+                  Book a Session
+                </CTAButton>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-gradient-to-b from-charcoal to-charcoal-light/30">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Train with us

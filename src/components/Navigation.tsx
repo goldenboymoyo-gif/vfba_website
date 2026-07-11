@@ -4,16 +4,15 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMenu, FiX, FiHome } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
   { href: "/", label: "Home", isHome: true },
   { href: "/about", label: "About" },
+  { href: "/fighters", label: "Fighters" },
   { href: "/programmes", label: "Training" },
-  { href: "/community-impact", label: "Impact" },
-  { href: "/rise-film", label: "Rise" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/news", label: "News" },
+  { href: "/rise-film", label: "Rise" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -22,19 +22,21 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Victoria Falls Boxing Academy | He Fought to Survive",
+    default: "Victoria Falls Boxing Academy | Building Champions Inside & Outside The Ring",
     template: "%s | Victoria Falls Boxing Academy",
   },
   description:
-    "The official home of Victoria Falls Boxing Academy — a place where discipline, resilience, and hope transform young lives through boxing. Founded by Tobias Mupfuti in Victoria Falls, Zimbabwe.",
+    "Victoria Falls Boxing Academy — a professional boxing academy and children's home in Zimbabwe. Developing fighters, building discipline, and changing lives through boxing. Founded by Tobias Mupfuti.",
   keywords: [
     "Victoria Falls Boxing Academy",
+    "VFBA",
     "Tobias Mupfuti",
     "boxing academy Zimbabwe",
     "boxing Victoria Falls",
-    "Rise film Victoria Falls Boxing Academy",
     "youth boxing Zimbabwe",
     "community sport Victoria Falls",
+    "Rise film",
+    "boxing training Africa",
   ],
   authors: [{ name: "Victoria Falls Boxing Academy" }],
   creator: "Victoria Falls Boxing Academy",
@@ -43,9 +45,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://victoriafallsboxingacademy.org",
     siteName: "Victoria Falls Boxing Academy",
-    title: "Victoria Falls Boxing Academy | He Fought to Survive",
+    title: "Victoria Falls Boxing Academy | Building Champions Inside & Outside The Ring",
     description:
-      "A true story of resilience, discipline, and hope — transforming young lives through boxing in Victoria Falls, Zimbabwe.",
+      "A professional boxing academy in Victoria Falls, Zimbabwe — developing fighters, building discipline, and changing lives through boxing.",
     images: [
       {
         url: "/og-image.jpg",
@@ -57,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Victoria Falls Boxing Academy | He Fought to Survive",
+    title: "Victoria Falls Boxing Academy | Building Champions Inside & Outside The Ring",
     description:
-      "A true story of resilience, discipline, and hope — transforming young lives through boxing in Victoria Falls, Zimbabwe.",
+      "A professional boxing academy in Victoria Falls, Zimbabwe — developing fighters, building discipline, and changing lives through boxing.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -91,12 +93,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "NGO",
+              "@type": "SportsAcademy",
               name: "Victoria Falls Boxing Academy",
               alternateName: "VFBA",
               url: "https://victoriafallsboxingacademy.org",
               description:
-                "A boxing academy and children's home in Victoria Falls, Zimbabwe, using sport to transform the lives of at-risk youth.",
+                "A professional boxing academy and children's home in Victoria Falls, Zimbabwe, developing fighters and transforming lives through boxing.",
               founder: {
                 "@type": "Person",
                 name: "Tobias Mupfuti",
@@ -110,6 +112,8 @@ export default function RootLayout({
               sameAs: [
                 "https://www.facebook.com/victoriafallsboxingacademy",
                 "https://www.instagram.com/victoriafallsboxingacademy",
+                "https://www.tiktok.com/@victoriafallsboxingacademy",
+                "https://www.youtube.com/@victoriafallsboxingacademy",
               ],
             }),
           }}

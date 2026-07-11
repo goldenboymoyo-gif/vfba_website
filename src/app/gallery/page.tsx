@@ -6,7 +6,7 @@ import ChapterTitle from "@/components/ChapterTitle";
 import Image from "next/image";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const categories = ["All", "Gym Life", "Training", "Community", "Tournaments", "Rise Film", "Portraits"] as const;
+const categories = ["All", "Gym Life", "Fighters", "Training", "Community", "Tournaments", "Rise Film", "Portraits"] as const;
 type Category = (typeof categories)[number];
 
 interface GalleryImage {
@@ -32,6 +32,9 @@ const galleryImages: GalleryImage[] = [
   { src: "/images/vfba-community-4.jpg", alt: "Community event", caption: "Community gathering", category: "Community", aspect: "aspect-[4/3]" },
   { src: "/images/vfba-community-5.jpg", alt: "Community event", caption: "Community outreach", category: "Community", aspect: "aspect-[4/3]" },
   { src: "/images/vfba-victoria-falls.jpg", alt: "Victoria Falls", caption: "Victoria Falls, Zimbabwe", category: "Community", aspect: "aspect-[16/9]" },
+  { src: "/images/vfba-portrait-1.jpg", alt: "VFBA fighter portrait", caption: "VFBA Fighter — Portrait", category: "Fighters", aspect: "aspect-[3/4]" },
+  { src: "/images/vfba-portrait-2.jpg", alt: "VFBA fighter portrait", caption: "VFBA Fighter — Portrait", category: "Fighters", aspect: "aspect-[3/4]" },
+  { src: "/images/rise-tobias-portrait.jpg", alt: "Coach Tobias portrait", caption: "Coach Tobias Mupfuti", category: "Fighters", aspect: "aspect-[3/4]" },
   { src: "/images/rise-pro-still-1.jpg", alt: "Rise film production still", caption: "Rise — Production still", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-pro-still-2.jpg", alt: "Rise film scene", caption: "Rise — Behind the scenes", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-pro-still-3.jpg", alt: "Rise production photo", caption: "Rise — Cast and crew", category: "Rise Film", aspect: "aspect-[4/3]" },
