@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -17,9 +18,9 @@ const navLinks = [
 ];
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activePath, setActivePath] = useState("/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,15 +28,6 @@ export default function Navigation() {
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    setActivePath(window.location.pathname);
-    const handleRouteChange = () => {
-      setActivePath(window.location.pathname);
-    };
-    window.addEventListener("popstate", handleRouteChange);
-    return () => window.removeEventListener("popstate", handleRouteChange);
   }, []);
 
   useEffect(() => {
@@ -49,15 +41,9 @@ export default function Navigation() {
     };
   }, [isOpen]);
 
-  useEffect(() => {
-    if (isOpen) {
-      window.scrollTo({ top: 0 });
-    }
-  }, [isOpen]);
-
   const isActive = (href: string) => {
-    if (href === "/") return activePath === "/";
-    return activePath.startsWith(href);
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(href + "/");
   };
 
   return (
