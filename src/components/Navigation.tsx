@@ -81,7 +81,7 @@ export default function Navigation() {
               </div>
             </Link>
 
-            <div className="hidden lg:flex items-center gap-1 px-2">
+            <div className="hidden lg:flex items-center gap-2 px-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
