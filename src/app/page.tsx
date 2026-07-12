@@ -584,145 +584,186 @@ function GymLifeSection() {
   );
 }
 
-function TrainingVideosSection() {
+function SocialHubSection() {
   return (
     <section className="relative section bg-charcoal-light/50 border-t border-charcoal-lighter/30">
       <div className="site-container">
         <ChapterTitle
           number="06"
-          title="Latest Training Videos"
-          subtitle="Watch our fighters in action — morning road runs, gym sessions, sparring, and community events."
+          title="Social Hub"
+          subtitle="Everything VFBA posts — training, tournaments, community events, and behind-the-scenes. Follow us on every platform."
+          align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <AnimatedSection delay={0}>
-            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/vfba-training-1.jpg"
-                  alt="Morning road run training"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
-                  <FiPlay size={20} className="text-cream ml-0.5" />
-                </div>
-                <span className="text-cream text-sm font-medium">Morning Road Run</span>
-                <span className="text-dust/60 text-xs mt-1">The &ldquo;Bush Boxers&rdquo; tradition</span>
+        {/* YouTube Featured Video */}
+        <AnimatedSection>
+          <div className="max-w-4xl mx-auto mb-14">
+            <span className="text-gold/70 text-xs tracking-[0.3em] uppercase block mb-4 text-center">
+              <SiYoutube size={14} className="inline mr-2" />
+              YouTube — Latest from VFBA
+            </span>
+            <div className="relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter">
+              <iframe
+                src="https://www.youtube.com/embed?listType=user_uploads&list=UCpNaKUdHzD0QugBAJyRHz6w"
+                title="VFBA YouTube Channel"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Facebook + Instagram Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-14">
+          {/* Facebook Page Plugin */}
+          <AnimatedSection direction="left">
+            <span className="text-gold/70 text-xs tracking-[0.3em] uppercase block mb-4">
+              <FiFacebook size={14} className="inline mr-2" />
+              Facebook — @victoriafallsboxingacademy
+            </span>
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden p-1">
+              <div
+                className="fb-page"
+                data-href="https://www.facebook.com/victoriafallsboxingacademy"
+                data-tabs="timeline,events"
+                data-width="500"
+                data-height="600"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote cite="https://www.facebook.com/victoriafallsboxingacademy" className="fb-xfbml-parse-ignore">
+                  <a href="https://www.facebook.com/victoriafallsboxingacademy">Victoria Falls Boxing Academy on Facebook</a>
+                </blockquote>
               </div>
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.1}>
-            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/vfba-gym-scene.jpg"
-                  alt="Gym sparring session"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+          {/* Instagram Embed */}
+          <AnimatedSection direction="right" delay={0.2}>
+            <span className="text-gold/70 text-xs tracking-[0.3em] uppercase block mb-4">
+              <FiInstagram size={14} className="inline mr-2" />
+              Instagram — @victoriafallsboxingacademy
+            </span>
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden p-6">
+              <div className="grid grid-cols-2 gap-3">
+                <a href="https://www.instagram.com/victoriafallsboxingacademy/" target="_blank" rel="noopener noreferrer" className="group relative aspect-square bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-pink-400/30 transition-all duration-500">
+                  <Image src="/images/vfba-gym-scene.jpg" alt="VFBA Gym" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="25vw" />
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-all duration-500 flex items-center justify-center">
+                    <FiInstagram size={24} className="text-cream opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/victoriafallsboxingacademy/" target="_blank" rel="noopener noreferrer" className="group relative aspect-square bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-pink-400/30 transition-all duration-500">
+                  <Image src="/images/vfba-training-1.jpg" alt="VFBA Training" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="25vw" />
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-all duration-500 flex items-center justify-center">
+                    <FiInstagram size={24} className="text-cream opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/victoriafallsboxingacademy/" target="_blank" rel="noopener noreferrer" className="group relative aspect-square bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-pink-400/30 transition-all duration-500">
+                  <Image src="/images/vfba-children-1.jpg" alt="VFBA Children" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="25vw" />
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-all duration-500 flex items-center justify-center">
+                    <FiInstagram size={24} className="text-cream opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/victoriafallsboxingacademy/" target="_blank" rel="noopener noreferrer" className="group relative aspect-square bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-pink-400/30 transition-all duration-500">
+                  <Image src="/images/vfba-event-1.jpg" alt="VFBA Event" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="25vw" />
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-all duration-500 flex items-center justify-center">
+                    <FiInstagram size={24} className="text-cream opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </a>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
-                  <FiPlay size={20} className="text-cream ml-0.5" />
-                </div>
-                <span className="text-cream text-sm font-medium">Gym Sparring</span>
-                <span className="text-dust/60 text-xs mt-1">Inside the VFBA ring</span>
-              </div>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/vfba-event-1.jpg"
-                  alt="Youth training session"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
-                  <FiPlay size={20} className="text-cream ml-0.5" />
-                </div>
-                <span className="text-cream text-sm font-medium">Youth Development</span>
-                <span className="text-dust/60 text-xs mt-1">Training the next generation</span>
-              </div>
+              <a
+                href="https://www.instagram.com/victoriafallsboxingacademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-2 py-3 border border-pink-400/30 rounded-sm text-pink-400 text-sm hover:bg-pink-400/10 transition-all duration-300"
+              >
+                <FiInstagram size={16} />
+                Follow on Instagram
+              </a>
             </div>
           </AnimatedSection>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
-          <AnimatedSection delay={0}>
-            <a
-              href="https://www.instagram.com/victoriafallsboxingacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-pink-400/30 transition-all duration-500"
-            >
+        {/* TikTok Videos */}
+        <AnimatedSection>
+          <div className="mb-14">
+            <span className="text-gold/70 text-xs tracking-[0.3em] uppercase block mb-4 text-center">
+              <SiTiktok size={14} className="inline mr-2" />
+              TikTok — @coach.t5182
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden">
+                <div className="relative aspect-[9/16] max-h-[500px]">
+                  <iframe
+                    src="https://www.tiktok.com/embed/v2/7653914359286041876"
+                    title="VFBA TikTok Video 1"
+                    className="absolute inset-0 w-full h-full border-0"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <a
+                href="https://www.tiktok.com/@coach.t5182"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden flex flex-col items-center justify-center min-h-[400px] hover:border-cyan-400/30 transition-all duration-500"
+              >
+                <SiTiktok size={48} className="text-cyan-400/40 group-hover:text-cyan-400 transition-colors duration-300 mb-4" />
+                <span className="text-cream font-display text-lg mb-2">Watch All Videos</span>
+                <span className="text-dust text-sm">@coach.t5182</span>
+                <span className="text-dust/60 text-xs mt-2">Training, sparring &amp; daily life</span>
+              </a>
+              <a
+                href="https://www.tiktok.com/@victoriafallsboxingacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden flex flex-col items-center justify-center min-h-[400px] hover:border-cyan-400/30 transition-all duration-500"
+              >
+                <SiTiktok size={48} className="text-cyan-400/40 group-hover:text-cyan-400 transition-colors duration-300 mb-4" />
+                <span className="text-cream font-display text-lg mb-2">Official Account</span>
+                <span className="text-dust text-sm">@victoriafallsboxingacademy</span>
+                <span className="text-dust/60 text-xs mt-2">Academy highlights &amp; events</span>
+              </a>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Social Links */}
+        <AnimatedSection delay={0.1}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <a href="https://www.facebook.com/victoriafallsboxingacademy" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-4 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-blue-400/30 transition-all duration-500">
+              <FiFacebook size={20} className="text-blue-400/70 group-hover:text-blue-400 transition-colors" />
+              <div>
+                <span className="text-cream text-sm font-medium block">Facebook</span>
+                <span className="text-dust/60 text-xs">2,190 likes</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/victoriafallsboxingacademy" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-4 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-pink-400/30 transition-all duration-500">
               <FiInstagram size={20} className="text-pink-400/70 group-hover:text-pink-400 transition-colors" />
               <div>
                 <span className="text-cream text-sm font-medium block">Instagram</span>
                 <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
               </div>
             </a>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.05}>
-            <a
-              href="https://www.tiktok.com/@victoriafallsboxingacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-cyan-400/30 transition-all duration-500"
-            >
+            <a href="https://www.tiktok.com/@coach.t5182" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-4 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-cyan-400/30 transition-all duration-500">
               <SiTiktok size={20} className="text-cyan-400/70 group-hover:text-cyan-400 transition-colors" />
               <div>
                 <span className="text-cream text-sm font-medium block">TikTok</span>
-                <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
+                <span className="text-dust/60 text-xs">Coach T</span>
               </div>
             </a>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.1}>
-            <a
-              href="https://www.youtube.com/@victoriafallsboxingacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-red-400/30 transition-all duration-500"
-            >
+            <a href="https://www.youtube.com/@victoriafallsboxingacademy1626" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-4 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-red-400/30 transition-all duration-500">
               <SiYoutube size={20} className="text-red-400/70 group-hover:text-red-400 transition-colors" />
               <div>
                 <span className="text-cream text-sm font-medium block">YouTube</span>
-                <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
+                <span className="text-dust/60 text-xs">VFBA Channel</span>
               </div>
             </a>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.15}>
-            <a
-              href="https://www.facebook.com/victoriafallsboxingacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-blue-400/30 transition-all duration-500"
-            >
-              <FiFacebook size={20} className="text-blue-400/70 group-hover:text-blue-400 transition-colors" />
-              <div>
-                <span className="text-cream text-sm font-medium block">Facebook</span>
-                <span className="text-dust/60 text-xs">Victoria Falls Boxing Academy</span>
-              </div>
-            </a>
-          </AnimatedSection>
-        </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
@@ -1156,7 +1197,7 @@ export default function Home() {
       <ImpactSection />
       <CoachesSection />
       <GymLifeSection />
-      <TrainingVideosSection />
+      <SocialHubSection />
       <TournamentHighlightsSection />
       <CommunityImpactSection />
       <RiseSection />

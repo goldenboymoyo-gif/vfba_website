@@ -125,6 +125,12 @@ export default function RootLayout({
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
+        <div id="fb-root" />
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+        />
       </body>
     </html>
   );
