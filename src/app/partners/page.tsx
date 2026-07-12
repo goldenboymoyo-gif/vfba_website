@@ -70,7 +70,7 @@ export default function PartnersPage() {
             subtitle="Organisations and individuals who have supported VFBA's growth."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {partners.map((partner, i) => (
               <AnimatedSection key={partner.name} delay={i * 0.1}>
                 <div className="bg-charcoal-light/50 border border-charcoal-lighter rounded-sm p-8 hover:border-gold/20 transition-colors duration-500 h-full">
@@ -109,7 +109,7 @@ export default function PartnersPage() {
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Become a partner
           </h2>
-          <p className="text-dust text-lg max-w-xl mx-auto mb-8">
+          <p className="text-dust text-lg max-w-xl mx-auto mb-10">
             Organisations, brands, and NGOs — join VFBA&apos;s mission to
             transform lives through sport.
           </p>

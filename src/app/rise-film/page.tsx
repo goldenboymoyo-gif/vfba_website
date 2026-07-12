@@ -58,7 +58,7 @@ export default function RiseFilmPage() {
 
       {/* Trailer / Poster */}
       <section className="section">
-        <div className="max-w-5xl mx-auto px-5 md:px-8 lg:px-12">
+        <div className="site-container">
           <AnimatedSection>
             <div className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer">
               <div className="absolute inset-0">
@@ -102,7 +102,7 @@ export default function RiseFilmPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Rise follows a young boy named Rise, who lives alone on a
                   rubbish dump in Zimbabwe and survives by his determination and
@@ -183,7 +183,7 @@ export default function RiseFilmPage() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
             {[
               { title: "Tribeca Film Festival 2025", desc: "World premiere — first Zimbabwean film ever selected. Narrative Short category." },
               { title: "98th Academy Awards", desc: "Eligible for Oscar consideration. The first Zimbabwean film to qualify." },
@@ -214,7 +214,7 @@ export default function RiseFilmPage() {
             subtitle="Watch director Jessica J. Rowlands discuss the making of Rise."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <AnimatedSection delay={0}>
               <button
                 onClick={() => setActiveVideo("mCbbQSTvef8")}
@@ -294,7 +294,7 @@ export default function RiseFilmPage() {
           />
 
           <AnimatedSection>
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-3xl space-y-7">
               <p className="text-cream/90 text-base leading-relaxed">
                 Rise was written and directed by Jessica J. Rowlands, who grew up
                 between the UK and Victoria Falls and has twice won the UCLA
@@ -349,7 +349,7 @@ export default function RiseFilmPage() {
       </section>
 
       <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="site-container text-center">
+        <div className="site-container text-center mt-14">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             The story behind the film is real
           </h2>

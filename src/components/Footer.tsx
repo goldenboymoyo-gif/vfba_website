@@ -33,8 +33,8 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-charcoal border-t border-charcoal-lighter">
-      <div className="site-container py-16 md:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+      <div className="site-container py-20 md:py-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
@@ -109,10 +109,10 @@ export default function Footer() {
 
           {/* Academy Links */}
           <div>
-            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-6">
+            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-7">
               Academy
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3.5">
               {footerLinks.academy.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -128,10 +128,10 @@ export default function Footer() {
 
           {/* Discover Links */}
           <div>
-            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-6">
+            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-7">
               Discover
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3.5">
               {footerLinks.discover.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -147,7 +147,7 @@ export default function Footer() {
 
           {/* Support & Contact */}
           <div>
-            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-6">
+            <h3 className="font-display text-gold text-sm tracking-wider uppercase mb-7">
               Support
             </h3>
             <ul className="space-y-3 mb-8">
@@ -180,7 +180,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-charcoal-lighter">
+        <div className="mt-20 pt-10 border-t border-charcoal-lighter">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-dust/60 text-xs">
               &copy; {new Date().getFullYear()} Victoria Falls Boxing Academy.

@@ -38,7 +38,7 @@ export default function ChildrensHomePage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Before proper housing existed, children at VFBA lived and
                   slept at the gym — some under the boxing ring itself. Tobias
@@ -70,7 +70,7 @@ export default function ChildrensHomePage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                   <Image
                     src="/images/vfba-children-1.jpg"
@@ -103,7 +103,7 @@ export default function ChildrensHomePage() {
             subtitle="More than shelter — a complete home for children who need one."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
             {[
               { title: "Safe Housing", text: "A proper roof, a bed, and safety — the basics every child deserves." },
               { title: "Meals", text: "Three meals a day, ensuring children are healthy and nourished." },
@@ -130,9 +130,11 @@ export default function ChildrensHomePage() {
             Tobias plans to add 10 more rooms to accommodate more children.
             Your support makes that possible.
           </p>
-          <CTAButton href="/support" showArrow size="lg">
-            Donate Now
-          </CTAButton>
+          <div className="mt-14">
+            <CTAButton href="/support" showArrow size="lg">
+              Donate Now
+            </CTAButton>
+          </div>
         </div>
       </section>
     </>

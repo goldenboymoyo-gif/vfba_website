@@ -39,7 +39,7 @@ export default function ContactPage() {
 
       <section className="section">
         <div className="site-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
             <div>
               <ChapterTitle
                 number="01"
@@ -171,6 +171,28 @@ export default function ContactPage() {
                   Rise Film Page
                 </CTAButton>
               </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
+          <AnimatedSection>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream mb-6">
+              Ready to Connect?
+            </h2>
+            <p className="text-dust text-base max-w-xl mx-auto mb-10">
+              Whether you want to train, visit, or support VFBA, we&apos;d love to hear from you.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <CTAButton href="/support" showArrow size="lg">
+                Support VFBA
+              </CTAButton>
+              <CTAButton href="/contact" variant="secondary" showArrow>
+                Get in Touch
+              </CTAButton>
             </div>
           </AnimatedSection>
         </div>

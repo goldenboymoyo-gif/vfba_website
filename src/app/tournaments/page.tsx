@@ -2,6 +2,7 @@
 
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
+import CTAButton from "@/components/CTAButton";
 import Image from "next/image";
 
 export default function TournamentsPage() {
@@ -130,6 +131,26 @@ export default function TournamentsPage() {
               </div>
             </div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center mt-14">
+          <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
+            Get Involved
+          </h2>
+          <p className="text-dust text-lg max-w-xl mx-auto mb-8">
+            Whether you want to compete, volunteer, or support VFBA&apos;s mission,
+            there&apos;s a place for you.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <CTAButton href="/contact" showArrow size="lg">
+              Contact Us
+            </CTAButton>
+            <CTAButton href="/support" variant="secondary" showArrow size="lg">
+              Support VFBA
+            </CTAButton>
+          </div>
         </div>
       </section>
     </>

@@ -43,7 +43,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Tobias Mupfuti was eight years old when he found himself
                   homeless in Victoria Falls. His father had rejected him. His
@@ -62,7 +62,7 @@ export default function AboutPage() {
                   to use a classroom at Mosi-oa-Tunya High School as a boxing
                   training facility. The idea for VFBA was born.
                 </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="grid grid-cols-2 gap-5 mt-8">
                   <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                     <Image
                       src="/images/vfba-community-2.jpg"
@@ -86,7 +86,7 @@ export default function AboutPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <Quote
                   quote="It was not easy in the streets. I thought of giving hope to those children rejected by their families."
                   author="Tobias Mupfuti"
@@ -171,9 +171,11 @@ export default function AboutPage() {
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Meet the man behind the story
           </h2>
-          <CTAButton href="/coach-tobias" showArrow size="lg">
-            Coach Tobias Mupfuti
-          </CTAButton>
+          <div className="mt-14">
+            <CTAButton href="/coach-tobias" showArrow size="lg">
+              Coach Tobias Mupfuti
+            </CTAButton>
+          </div>
         </div>
       </section>
     </>

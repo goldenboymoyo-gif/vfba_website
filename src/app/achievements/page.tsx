@@ -2,6 +2,7 @@
 
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
+import CTAButton from "@/components/CTAButton";
 import { StatsRow } from "@/components/Stats";
 import Image from "next/image";
 
@@ -52,7 +53,7 @@ export default function AchievementsPage() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
             {[
               { year: "2025", title: "Tribeca Film Festival", desc: "World premiere — first Zimbabwean film ever selected. Narrative Short category." },
               { year: "2025", title: "Oscar Eligibility", desc: "Eligible for consideration at the 98th Academy Awards." },
@@ -98,7 +99,7 @@ export default function AchievementsPage() {
             subtitle="VFBA is the most active boxing club in Matabeleland North province."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
             {[
               { title: "Five-Nation Youth Tournament", desc: "VFBA hosted a five-nation tournament in Victoria Falls with boxers from Zimbabwe, Malawi, Zambia, Botswana, and Namibia." },
               { title: "National Representation", desc: "VFBA boxers have represented the academy at national and regional competitions." },
@@ -113,6 +114,30 @@ export default function AchievementsPage() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
+          <AnimatedSection>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-cream mb-6">
+              Support VFBA&apos;s
+              <br />
+              <span className="text-gradient-gold">Journey</span>
+            </h2>
+            <p className="text-dust text-base max-w-xl mx-auto mb-10">
+              These achievements are just the beginning. Help VFBA continue
+              developing young athletes and sharing their story with the world.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <CTAButton href="/support" showArrow>
+                Donate Now
+              </CTAButton>
+              <CTAButton href="/about" variant="secondary" showArrow>
+                Read the Full Story
+              </CTAButton>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
     </>

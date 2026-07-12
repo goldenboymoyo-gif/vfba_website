@@ -29,7 +29,7 @@ export function StoryCard({ title, description, href, image, imageAlt, tag, dela
       className="group bg-charcoal-light/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full flex flex-col"
     >
       {image && (
-        <div className="relative h-52 overflow-hidden">
+        <div className="relative h-56 overflow-hidden">
           <Image
             src={image}
             alt={imageAlt || title}
@@ -40,18 +40,18 @@ export function StoryCard({ title, description, href, image, imageAlt, tag, dela
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
         </div>
       )}
-      <div className="p-7 flex flex-col flex-1">
+      <div className="p-8 flex flex-col flex-1">
         {tag && (
-          <span className="text-gold text-xs tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-gold text-xs tracking-[0.2em] uppercase mb-5 block">
             {tag}
           </span>
         )}
-        <h3 className="font-display text-xl text-cream mb-4 group-hover:text-gold transition-colors duration-300">
+        <h3 className="font-display text-xl text-cream mb-5 group-hover:text-gold transition-colors duration-300">
           {title}
         </h3>
         <p className="text-dust text-sm leading-relaxed flex-1">{description}</p>
         {href && (
-          <div className="mt-6 pt-4 border-t border-charcoal-lighter flex items-center gap-2 text-gold text-sm group-hover:gap-3 transition-all duration-300">
+          <div className="mt-6 pt-5 border-t border-charcoal-lighter flex items-center gap-2 text-gold text-sm group-hover:gap-3 transition-all duration-300">
             <span>Read more</span>
             <FiArrowRight size={14} />
           </div>
@@ -82,7 +82,7 @@ export function Quote({ quote, author, role }: QuoteProps) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 1 }}
-      className="relative py-12 px-8"
+      className="relative py-16 px-10"
     >
       <div className="absolute top-0 left-0 font-display text-8xl text-gold/10 leading-none">
         &ldquo;
@@ -90,7 +90,7 @@ export function Quote({ quote, author, role }: QuoteProps) {
       <p className="font-display text-2xl md:text-3xl text-cream/90 leading-relaxed italic relative z-10">
         {quote}
       </p>
-      <footer className="mt-6">
+      <footer className="mt-8">
         <span className="text-gold font-medium">{author}</span>
         {role && (
           <span className="text-dust text-sm block mt-1">{role}</span>
@@ -117,7 +117,7 @@ export function TimelineItem({ year, title, description, side = "left" }: Timeli
       initial={{ opacity: 0, x: side === "left" ? -30 : 30 }}
       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: side === "left" ? -30 : 30 }}
       transition={{ duration: 0.7 }}
-      className="relative pl-8 pb-12 border-l border-charcoal-lighter last:border-l-0"
+      className="relative pl-8 pb-14 border-l border-charcoal-lighter last:border-l-0"
     >
       <div className="absolute left-0 top-0 w-3 h-3 rounded-full bg-gold -translate-x-[7px]" />
       <span className="text-gold text-xs tracking-[0.3em] uppercase">{year}</span>

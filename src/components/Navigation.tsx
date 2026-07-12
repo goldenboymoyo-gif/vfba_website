@@ -55,7 +55,7 @@ export default function Navigation() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[80rem] mx-auto px-5 md:px-8 lg:px-16">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link
               href="/"
@@ -81,12 +81,12 @@ export default function Navigation() {
               </div>
             </Link>
 
-            <div className="hidden lg:flex items-center gap-2 px-2">
+            <div className="hidden lg:flex items-center gap-1 px-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-2 text-sm tracking-wide transition-colors duration-300 relative rounded-sm ${
+                  className={`px-4 py-2 text-sm tracking-wide transition-colors duration-300 relative rounded-sm whitespace-nowrap ${
                     isActive(link.href)
                       ? "text-gold bg-gold/10"
                       : "text-dust hover:text-cream hover:bg-cream/5"

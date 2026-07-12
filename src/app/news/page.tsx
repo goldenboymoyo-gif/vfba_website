@@ -3,6 +3,7 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
 import { StoryCard } from "@/components/Cards";
+import CTAButton from "@/components/CTAButton";
 
 export default function NewsPage() {
   const articles = [
@@ -84,7 +85,7 @@ export default function NewsPage() {
 
       <section className="section">
         <div className="site-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, i) => (
               <StoryCard
                 key={article.title}
@@ -126,6 +127,28 @@ export default function NewsPage() {
               >
                 Instagram
               </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+        <div className="site-container text-center">
+          <AnimatedSection>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream mb-6">
+              Stay Connected
+            </h2>
+            <p className="text-dust text-base max-w-xl mx-auto mb-10">
+              Follow VFBA for the latest stories, press coverage, and updates from the academy.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <CTAButton href="/support" showArrow size="lg">
+                Support VFBA
+              </CTAButton>
+              <CTAButton href="/contact" variant="secondary" showArrow>
+                Get in Touch
+              </CTAButton>
             </div>
           </AnimatedSection>
         </div>

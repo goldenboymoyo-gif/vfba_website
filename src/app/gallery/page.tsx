@@ -141,7 +141,7 @@ export default function GalleryPage() {
           </div>
 
           {/* Masonry Grid */}
-          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-5 space-y-5">
             {filteredImages.map((image, i) => (
               <AnimatedSection key={image.src + activeCategory} delay={Math.min(i * 0.03, 0.3)}>
                 <button
@@ -183,7 +183,7 @@ export default function GalleryPage() {
           />
 
           <AnimatedSection>
-            <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
               <a
                 href="https://www.youtube.com/watch?v=mCbbQSTvef8"
                 target="_blank"

@@ -49,7 +49,7 @@ export default function CoachTobiasPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Tobias Mupfuti was eight years old when his father rejected him
                   and his mother could no longer provide. He found himself
@@ -102,7 +102,7 @@ export default function CoachTobiasPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Today, Tobias runs VFBA with his wife Shuvai. They take in
                   homeless children, train them in boxing, send them to school,
@@ -119,7 +119,7 @@ export default function CoachTobiasPage() {
             </AnimatedSection>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
             <AnimatedSection>
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
@@ -184,7 +184,7 @@ export default function CoachTobiasPage() {
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Help Tobias continue his work
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-14 pt-2">
             <CTAButton href="/support" showArrow size="lg">
               Donate
             </CTAButton>

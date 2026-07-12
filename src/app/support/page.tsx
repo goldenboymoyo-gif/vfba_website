@@ -306,7 +306,7 @@ export default function SupportPage() {
             subtitle="Every contribution directly supports the lives of children at VFBA. Here is exactly what your generosity funds."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {impactAreas.map((area, i) => (
               <AnimatedSection key={area.title} delay={i * 0.08}>
                 <div className="group bg-charcoal-light/50 border border-charcoal-lighter rounded-sm overflow-hidden card-hover-lift hover:border-gold/20 h-full flex flex-col">
@@ -347,7 +347,7 @@ export default function SupportPage() {
             subtitle="We believe you deserve to know exactly how your support is used."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
             {[
               {
                 icon: <FiShield size={20} className="text-gold" />,
@@ -400,7 +400,7 @@ export default function SupportPage() {
             subtitle="Choose how you want to be part of VFBA's mission. Every option makes a real difference."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
             {supportOptions.map((option, i) => {
               const Icon = option.icon;
               return (
@@ -459,7 +459,7 @@ export default function SupportPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
             {paymentMethods.map((method, i) => (
               <AnimatedSection key={method.name} delay={i * 0.08}>
                 {method.url ? (
@@ -524,7 +524,7 @@ export default function SupportPage() {
           />
 
           <AnimatedSection>
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-3xl space-y-7">
               <p className="text-cream/90 text-base leading-relaxed">
                 VFBA welcomes volunteers who want to contribute their time and
                 skills. Whether you&apos;re a coach, teacher, builder,
@@ -565,7 +565,7 @@ export default function SupportPage() {
           />
 
           <AnimatedSection>
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-3xl space-y-7">
               <p className="text-cream/90 text-base leading-relaxed">
                 VFBA is actively seeking partnerships with organisations that
                 share our commitment to youth development, sport for social
@@ -598,7 +598,7 @@ export default function SupportPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {otherWays.map((way, i) => (
               <AnimatedSection key={way.title} delay={i * 0.08}>
                 <Link href={way.href} className="block h-full">

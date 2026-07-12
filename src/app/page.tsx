@@ -151,7 +151,7 @@ function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <AnimatedSection direction="left">
-            <div className="space-y-6">
+            <div className="space-y-7">
               <p className="text-cream/90 text-base leading-relaxed">
                 Victoria Falls Boxing Academy was born from one man&apos;s fight
                 to survive. Tobias Mupfuti was abandoned as a child, homeless on
@@ -171,7 +171,7 @@ function AboutSection() {
                 Victoria Falls — VFBA is a place where discipline, resilience,
                 and hope transform young lives.
               </p>
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
+              <div className="pt-2 flex flex-col sm:flex-row gap-4">
                 <CTAButton href="/about" showArrow>
                   Our Full Story
                 </CTAButton>
@@ -183,7 +183,7 @@ function AboutSection() {
           </AnimatedSection>
 
           <AnimatedSection direction="right" delay={0.2}>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-5">
               <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
                   src="/images/rise-tobias-portrait.jpg"
@@ -222,7 +222,7 @@ function FightersShowcase() {
           subtitle="Real athletes. Real stories. These are the fighters who represent Victoria Falls Boxing Academy."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {showcaseFighters.map((fighter, i) => (
             <AnimatedSection key={fighter.slug} delay={i * 0.1}>
               <Link href="/fighters" className="block group">
@@ -260,7 +260,7 @@ function FightersShowcase() {
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-14">
           <CTAButton href="/fighters" variant="secondary" showArrow>
             View All Fighters
           </CTAButton>
@@ -280,7 +280,7 @@ function TrainingSection() {
           subtitle="Professional coaching for children and adults. From first steps to competitive fighters — VFBA is open to the community."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <AnimatedSection delay={0}>
             <div className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full">
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -379,7 +379,7 @@ function TrainingSection() {
           </AnimatedSection>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-14">
           <CTAButton href="/programmes" variant="secondary" showArrow>
             View All Programmes
           </CTAButton>
@@ -408,7 +408,7 @@ function AcademyStatsSection() {
           ]}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
           <StoryCard
             title="The Gym"
             description="A purpose-built boxing arena in Chinotimba, Victoria Falls — one of the biggest gyms in the city. Open to the community, funding the children's home."
@@ -460,7 +460,7 @@ function GymLifeSection() {
           subtitle="Inside the VFBA gym — where discipline meets community, and every session is a step toward something greater."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-12">
           <AnimatedSection delay={0} className="col-span-2 row-span-2">
             <motion.div style={{ y: y1 }} className="relative aspect-square bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group">
               <Image
@@ -552,7 +552,7 @@ function GymLifeSection() {
           </AnimatedSection>
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-14">
           <CTAButton href="/gallery" variant="secondary" showArrow>
             Explore Full Gallery
           </CTAButton>
@@ -577,7 +577,7 @@ function MissionSection() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="space-y-6">
+            <div className="space-y-7">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight">
                 Boxing is not
                 <br />
@@ -662,7 +662,7 @@ function RiseSection() {
           </motion.div>
         </Link>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14 max-w-4xl mx-auto">
           <AnimatedSection delay={0}>
             <div className="text-center">
               <span className="font-display text-lg font-bold text-gradient-gold">
@@ -695,7 +695,7 @@ function RiseSection() {
           </AnimatedSection>
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-14">
           <CTAButton href="/rise-film" variant="secondary" showArrow>
             Discover the Full Story
           </CTAButton>
@@ -723,7 +723,7 @@ function SocialSection() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight mb-4">
             Stay connected
           </h2>
-          <p className="text-dust text-base max-w-xl mx-auto mb-10">
+          <p className="text-dust text-base max-w-xl mx-auto mb-12">
             Training highlights, tournament results, community events, and
             behind-the-scenes content from the gym.
           </p>
@@ -763,7 +763,7 @@ function SupportSection() {
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
           <StoryCard
             title="Donate"
             description="Fund training equipment, school fees, meals, and shelter for children who need it most."
@@ -787,7 +787,7 @@ function SupportSection() {
           />
         </div>
 
-        <div className="mt-12">
+        <div className="mt-14">
           <CTAButton href="/support" size="lg" showArrow>
             Support VFBA
           </CTAButton>

@@ -37,7 +37,7 @@ interface StatsRowProps {
 
 export function StatsRow({ stats }: StatsRowProps) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-10 py-12">
       {stats.map((stat, i) => (
         <Stat
           key={stat.label}

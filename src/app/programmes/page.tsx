@@ -37,7 +37,7 @@ export default function ProgrammesPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   VFBA&apos;s youth programme is the foundation of everything we do.
                   Approximately 40 children train for free, learning not just
@@ -149,7 +149,7 @@ export default function ProgrammesPage() {
         </div>
       </section>
 
-      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <section className="section">
         <div className="site-container">
           <ChapterTitle
             number="03"
@@ -196,7 +196,7 @@ export default function ProgrammesPage() {
       </section>
 
       <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
-        <div className="site-container text-center">
+        <div className="site-container text-center mt-14">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Train with us
           </h2>

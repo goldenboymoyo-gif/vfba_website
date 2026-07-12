@@ -57,7 +57,7 @@ export default function CommunityImpactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   In Victoria Falls, nearly 5 million children live in poverty in
                   Zimbabwe, with 1.6 million in extreme poverty. Without
@@ -102,7 +102,7 @@ export default function CommunityImpactPage() {
             subtitle="Beyond the ring — a complete support system for children in need."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Boxing Training",
@@ -147,7 +147,7 @@ export default function CommunityImpactPage() {
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Make an impact
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4">
             <CTAButton href="/support" showArrow size="lg">
               Donate
             </CTAButton>

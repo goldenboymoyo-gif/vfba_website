@@ -72,7 +72,7 @@ export default function FightersPage() {
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <span className="text-gold/70 text-xs tracking-[0.4em] uppercase block">
                   The Heart Behind VFBA
                 </span>
@@ -133,7 +133,7 @@ export default function FightersPage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {filtered.map((fighter, i) => (
               <AnimatedSection key={fighter.slug} delay={i * 0.1}>
                 <button
@@ -201,9 +201,11 @@ export default function FightersPage() {
             VFBA is always looking for dedicated athletes. Whether you&apos;re a
             beginner or an experienced fighter — there is a place for you.
           </p>
-          <CTAButton href="/contact" showArrow size="lg">
-            Join VFBA
-          </CTAButton>
+          <div className="mt-14">
+            <CTAButton href="/contact" showArrow size="lg">
+              Join VFBA
+            </CTAButton>
+          </div>
         </div>
       </section>
 

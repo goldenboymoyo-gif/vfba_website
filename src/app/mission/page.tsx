@@ -74,7 +74,7 @@ export default function MissionPage() {
             subtitle="The values that drive everything we do."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Discipline Over Violence",
@@ -132,9 +132,11 @@ export default function MissionPage() {
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Join our mission
           </h2>
-          <CTAButton href="/support" showArrow size="lg">
-            Support VFBA
-          </CTAButton>
+          <div className="mt-14">
+            <CTAButton href="/support" showArrow size="lg">
+              Support VFBA
+            </CTAButton>
+          </div>
         </div>
       </section>
     </>
