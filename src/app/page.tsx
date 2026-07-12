@@ -4,7 +4,19 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { FiArrowRight, FiPlay, FiFacebook, FiInstagram, FiUsers, FiBox, FiTarget, FiHeart } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiPlay,
+  FiFacebook,
+  FiInstagram,
+  FiUsers,
+  FiBox,
+  FiTarget,
+  FiHeart,
+  FiAward,
+  FiMapPin,
+  FiCalendar,
+} from "react-icons/fi";
 import { SiTiktok, SiYoutube } from "react-icons/si";
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
@@ -32,7 +44,7 @@ function HeroSection() {
       >
         <div className="absolute inset-0">
           <Image
-            src="/images/rise-tobias-landscape.jpg"
+            src="/images/vfba-gym-scene.jpg"
             alt="VFBA boxing gym — training in Victoria Falls"
             fill
             className="object-cover object-top opacity-40"
@@ -153,23 +165,24 @@ function AboutSection() {
           <AnimatedSection direction="left">
             <div className="space-y-7">
               <p className="text-cream/90 text-base leading-relaxed">
-                Victoria Falls Boxing Academy was born from one man&apos;s fight
-                to survive. Tobias Mupfuti was abandoned as a child, homeless on
-                the streets of Victoria Falls. Boxing gave him structure. It gave
-                him purpose. And it gave him the strength to give other children
-                the same chance.
+                Founded in 2010, Victoria Falls Boxing Academy is the longtime
+                dream of Tobius Muposiwa. Growing up, his life path was
+                transformed when he began boxing training under veteran boxer
+                Titus &ldquo;TNT&rdquo; Zhikali. He wanted to use boxing to
+                influence other at-risk youngsters — to provide discipline and
+                structure in their lives.
               </p>
               <p className="text-dust leading-relaxed">
-                Today, VFBA is the most active boxing club in Matabeleland North
-                province. Approximately 40 children train for free. Eight live
-                on-site in the children&apos;s home. The gym is open to the
-                community — and every fee paid by adult members funds a
-                child&apos;s meals, school fees, and shelter.
+                He gathered a group of boxers together who came to be known as
+                the &ldquo;Bush Boxers&rdquo;, as early morning and evening saw
+                them training in the surrounds of Victoria Falls town. Today,
+                VFBA is the most active boxing club in Matabeleland North
+                province.
               </p>
               <p className="text-dust leading-relaxed">
-                From training under trees to one of the biggest boxing gyms in
-                Victoria Falls — VFBA is a place where discipline, resilience,
-                and hope transform young lives.
+                Approximately 40 children train for free. Eight live on-site in
+                the children&apos;s home. Every fee paid by adult members funds
+                a child&apos;s meals, school fees, and shelter.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row gap-4">
                 <CTAButton href="/about" showArrow>
@@ -187,7 +200,7 @@ function AboutSection() {
               <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
                   src="/images/rise-tobias-portrait.jpg"
-                  alt="Coach Tobias Mupfuti"
+                  alt="Coach Tobius Muposiwa"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -210,72 +223,12 @@ function AboutSection() {
   );
 }
 
-function FightersShowcase() {
-  const showcaseFighters = fighters.filter((f) => f.slug !== "tobias-mupfuti");
-
+function TrainingSection() {
   return (
-    <section className="relative section bg-charcoal-light/50 overflow-hidden">
+    <section className="relative section bg-charcoal-light/50">
       <div className="site-container">
         <ChapterTitle
           number="02"
-          title="Our Fighters"
-          subtitle="Real athletes. Real stories. These are the fighters who represent Victoria Falls Boxing Academy."
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-          {showcaseFighters.map((fighter, i) => (
-            <AnimatedSection key={fighter.slug} delay={i * 0.1}>
-              <Link href="/fighters" className="block group">
-                <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/30 transition-all duration-500 fighter-card">
-                  <Image
-                    src={fighter.image}
-                    alt={fighter.name}
-                    fill
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                    <span className="text-rust-light text-xs tracking-[0.3em] uppercase block mb-1">
-                      {fighter.weightClass}
-                    </span>
-                    <h3 className="font-display text-xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
-                      {fighter.name}
-                    </h3>
-                    <span className="text-dust text-sm">&ldquo;{fighter.nickname}&rdquo;</span>
-                    <div className="flex gap-4 mt-2">
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-gold font-bold">{fighter.stats.wins}</span> W
-                      </span>
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-rust-light font-bold">{fighter.stats.losses}</span> L
-                      </span>
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-dust font-bold">{fighter.stats.draws}</span> D
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </AnimatedSection>
-          ))}
-        </div>
-
-        <div className="text-center mt-14">
-          <CTAButton href="/fighters" variant="secondary" showArrow>
-            View All Fighters
-          </CTAButton>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function TrainingSection() {
-  return (
-    <section className="relative section border-t border-charcoal-lighter/30">
-      <div className="site-container">
-        <ChapterTitle
-          number="03"
           title="Training Programmes"
           subtitle="Professional coaching for children and adults. From first steps to competitive fighters — VFBA is open to the community."
         />
@@ -300,7 +253,7 @@ function TrainingSection() {
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
                   Free training for underprivileged children. Boxing technique,
-                  fitness, and life skills.
+                  fitness, and life skills. No child is turned away.
                 </p>
               </div>
             </div>
@@ -324,7 +277,7 @@ function TrainingSection() {
                   Community Gym
                 </h3>
                 <p className="text-dust text-sm leading-relaxed">
-                  Open to adults. A small fee to train — those funds support the children.
+                  Open to adults. A small fee to train — those funds support the children&apos;s meals, school fees, and shelter.
                 </p>
               </div>
             </div>
@@ -389,53 +342,173 @@ function TrainingSection() {
   );
 }
 
-function AcademyStatsSection() {
+function CoachesSection() {
   return (
-    <section className="relative section-lg bg-charcoal-light/50">
+    <section className="relative section border-t border-charcoal-lighter/30">
+      <div className="site-container">
+        <ChapterTitle
+          number="03"
+          title="Our Coaches"
+          subtitle="The mentors who shape champions. VFBA's coaching staff bring decades of combined experience and an unwavering commitment to youth development."
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+          <AnimatedSection direction="left">
+            <div className="flex flex-col sm:flex-row gap-8 items-start">
+              <div className="relative w-full sm:w-48 aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter shrink-0">
+                <Image
+                  src="/images/rise-tobias-portrait.jpg"
+                  alt="Tobius Muposiwa"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, 192px"
+                />
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <span className="text-gold text-xs tracking-[0.3em] uppercase">
+                    Head Coach &amp; Founder
+                  </span>
+                  <h3 className="font-display text-2xl text-cream mt-1">
+                    Tobius Muposiwa
+                  </h3>
+                  <span className="text-dust text-sm italic">
+                    &ldquo;The Founder&rdquo;
+                  </span>
+                </div>
+                <p className="text-dust text-sm leading-relaxed">
+                  Abandoned at eight, homeless on the streets of Victoria Falls.
+                  Boxing saved his life. He built VFBA from nothing — training
+                  under trees, then a rented classroom lit by cellphone light,
+                  and now one of the biggest gyms in the city.
+                </p>
+                <p className="text-dust text-sm leading-relaxed">
+                  As Director and Head Coach, Tobius personally mentors every
+                  child who walks through the door. He assumed guardianship for
+                  his top young fighters and pays their school fees.
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection direction="right" delay={0.2}>
+            <div className="flex flex-col sm:flex-row gap-8 items-start">
+              <div className="relative w-full sm:w-48 aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter shrink-0">
+                <Image
+                  src="/images/vfba-training-2.jpg"
+                  alt="Titus 'TNT' Zhikali"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, 192px"
+                />
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <span className="text-gold text-xs tracking-[0.3em] uppercase">
+                    Senior Coach &amp; Mentor
+                  </span>
+                  <h3 className="font-display text-2xl text-cream mt-1">
+                    Titus &ldquo;TNT&rdquo; Zhikali
+                  </h3>
+                  <span className="text-dust text-sm italic">
+                    &ldquo;The Veteran&rdquo;
+                  </span>
+                </div>
+                <p className="text-dust text-sm leading-relaxed">
+                  A veteran Zimbabwean boxer who first taught Tobius to fight.
+                  His decision to share his knowledge with a homeless teenager
+                  planted the seed that would eventually grow into VFBA.
+                </p>
+                <p className="text-dust text-sm leading-relaxed">
+                  Titus continues to coach at the academy, passing on decades
+                  of ring experience and the values of discipline, respect, and
+                  perseverance to the next generation.
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <AnimatedSection delay={0.3}>
+          <div className="mt-14 bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 lg:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div>
+                <FiUsers size={24} className="text-gold/60 mx-auto mb-3" />
+                <h4 className="font-display text-lg text-cream mb-1">Trustees</h4>
+                <p className="text-dust text-sm">Andrew Lane, Faruk Karim, Obert Sibanda</p>
+              </div>
+              <div>
+                <FiAward size={24} className="text-gold/60 mx-auto mb-3" />
+                <h4 className="font-display text-lg text-cream mb-1">Management</h4>
+                <p className="text-dust text-sm">Danielle Connolly (Chair), Ian Gloss, Kent Davies, Laura Taggart</p>
+              </div>
+              <div>
+                <FiHeart size={24} className="text-gold/60 mx-auto mb-3" />
+                <h4 className="font-display text-lg text-cream mb-1">Key Donor</h4>
+                <p className="text-dust text-sm">Mark Valentine — provided the entire gym and fitout</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  );
+}
+
+function FightersShowcase() {
+  const showcaseFighters = fighters.filter((f) => f.slug !== "tobius-muposiwa");
+
+  return (
+    <section className="relative section bg-charcoal-light/50 overflow-hidden">
       <div className="site-container">
         <ChapterTitle
           number="04"
-          title="The Academy Today"
-          subtitle="From training under trees to one of the biggest boxing gyms in Victoria Falls — and a home for children who need one."
+          title="Our Fighters"
+          subtitle="Real athletes. Real stories. From the town dump to national champion — these are the fighters who represent VFBA."
         />
 
-        <StatsRow
-          stats={[
-            { number: "40+", label: "Children Training" },
-            { number: "8", label: "Children Living On-Site" },
-            { number: "5", label: "Nations Competed" },
-            { number: "19+", label: "Film Awards Worldwide" },
-          ]}
-        />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+          {showcaseFighters.map((fighter, i) => (
+            <AnimatedSection key={fighter.slug} delay={i * 0.1}>
+              <Link href="/fighters" className="block group">
+                <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/30 transition-all duration-500 fighter-card">
+                  <Image
+                    src={fighter.image}
+                    alt={fighter.name}
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+                    <span className="text-rust-light text-xs tracking-[0.3em] uppercase block mb-1">
+                      {fighter.weightClass}
+                    </span>
+                    <h3 className="font-display text-xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
+                      {fighter.name}
+                    </h3>
+                    <span className="text-dust text-sm">&ldquo;{fighter.nickname}&rdquo;</span>
+                    <div className="flex gap-4 mt-2">
+                      <span className="text-cream/80 text-xs">
+                        <span className="text-gold font-bold">{fighter.stats.wins}</span> W
+                      </span>
+                      <span className="text-cream/80 text-xs">
+                        <span className="text-rust-light font-bold">{fighter.stats.losses}</span> L
+                      </span>
+                      <span className="text-cream/80 text-xs">
+                        <span className="text-dust font-bold">{fighter.stats.draws}</span> D
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </AnimatedSection>
+          ))}
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
-          <StoryCard
-            title="The Gym"
-            description="A purpose-built boxing arena in Chinotimba, Victoria Falls — one of the biggest gyms in the city. Open to the community, funding the children's home."
-            href="/programmes"
-            tag="Training"
-            image="/images/vfba-gym-scene.jpg"
-            imageAlt="VFBA boxing gym in Chinotimba"
-            delay={0}
-          />
-          <StoryCard
-            title="The Children's Home"
-            description="A safe haven for orphaned and at-risk boys. Shelter, food, education, and discipline — a place to call home."
-            href="/childrens-home"
-            tag="Shelter"
-            image="/images/vfba-children-1.jpg"
-            imageAlt="Children at VFBA Children's Home"
-            delay={0.1}
-          />
-          <StoryCard
-            title="Community Impact"
-            description="The most active boxing club in Matabeleland North. Changing lives through discipline, mentorship, and sport."
-            href="/community-impact"
-            tag="Impact"
-            image="/images/vfba-community-2.jpg"
-            imageAlt="VFBA community impact"
-            delay={0.2}
-          />
+        <div className="text-center mt-14">
+          <CTAButton href="/fighters" variant="secondary" showArrow>
+            View All Fighters
+          </CTAButton>
         </div>
       </div>
     </section>
@@ -562,44 +635,307 @@ function GymLifeSection() {
   );
 }
 
-function MissionSection() {
+function TrainingVideosSection() {
   return (
-    <section className="relative section overflow-hidden bg-charcoal-light/50">
-      <div className="absolute inset-0 bg-gradient-to-r from-rust/5 to-green/5" />
-      <div className="site-container relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <AnimatedSection>
-            <Quote
-              quote="We try by every means so that they do not have time to go to the streets. After training, they are tired; they do their homework and sleep. It was not easy in the streets. I thought of giving hope to those children rejected by their families."
-              author="Tobias Mupfuti"
-              role="Founder & Head Coach, VFBA"
-            />
-          </AnimatedSection>
+    <section className="relative section bg-charcoal-light/50 border-t border-charcoal-lighter/30">
+      <div className="site-container">
+        <ChapterTitle
+          number="06"
+          title="Latest Training Videos"
+          subtitle="Watch our fighters in action — morning road runs, gym sessions, sparring, and community events."
+        />
 
-          <AnimatedSection delay={0.2}>
-            <div className="space-y-7">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight">
-                Boxing is not
-                <br />
-                <span className="text-gradient-gold">violence.</span>
-                <br />
-                It&apos;s structure.
-              </h2>
-              <p className="text-dust text-base leading-relaxed">
-                Self-confidence. Perseverance. Respect. At VFBA, boxing is a
-                vehicle for instilling the discipline and resilience that young
-                people need to build a life — not just survive one.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <CTAButton href="/mission" showArrow>
-                  Our Mission
-                </CTAButton>
-                <CTAButton href="/support" variant="secondary" showArrow>
-                  Support VFBA
-                </CTAButton>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <AnimatedSection delay={0}>
+            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/vfba-training-1.jpg"
+                  alt="Morning road run training"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
+                  <FiPlay size={20} className="text-cream ml-0.5" />
+                </div>
+                <span className="text-cream text-sm font-medium">Morning Road Run</span>
+                <span className="text-dust/60 text-xs mt-1">The &ldquo;Bush Boxers&rdquo; tradition</span>
               </div>
             </div>
           </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/vfba-gym-scene.jpg"
+                  alt="Gym sparring session"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
+                  <FiPlay size={20} className="text-cream ml-0.5" />
+                </div>
+                <span className="text-cream text-sm font-medium">Gym Sparring</span>
+                <span className="text-dust/60 text-xs mt-1">Inside the VFBA ring</span>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="group relative aspect-video bg-charcoal rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/20 transition-all duration-500">
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/vfba-event-1.jpg"
+                  alt="Youth training session"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 to-charcoal/80" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-rust/30 border-2 border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
+                  <FiPlay size={20} className="text-cream ml-0.5" />
+                </div>
+                <span className="text-cream text-sm font-medium">Youth Development</span>
+                <span className="text-dust/60 text-xs mt-1">Training the next generation</span>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+          <AnimatedSection delay={0}>
+            <a
+              href="https://www.instagram.com/victoriafallsboxingacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-pink-400/30 transition-all duration-500"
+            >
+              <FiInstagram size={20} className="text-pink-400/70 group-hover:text-pink-400 transition-colors" />
+              <div>
+                <span className="text-cream text-sm font-medium block">Instagram</span>
+                <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
+              </div>
+            </a>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.05}>
+            <a
+              href="https://www.tiktok.com/@victoriafallsboxingacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-cyan-400/30 transition-all duration-500"
+            >
+              <SiTiktok size={20} className="text-cyan-400/70 group-hover:text-cyan-400 transition-colors" />
+              <div>
+                <span className="text-cream text-sm font-medium block">TikTok</span>
+                <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
+              </div>
+            </a>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <a
+              href="https://www.youtube.com/@victoriafallsboxingacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-red-400/30 transition-all duration-500"
+            >
+              <SiYoutube size={20} className="text-red-400/70 group-hover:text-red-400 transition-colors" />
+              <div>
+                <span className="text-cream text-sm font-medium block">YouTube</span>
+                <span className="text-dust/60 text-xs">@victoriafallsboxingacademy</span>
+              </div>
+            </a>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.15}>
+            <a
+              href="https://www.facebook.com/victoriafallsboxingacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-5 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-blue-400/30 transition-all duration-500"
+            >
+              <FiFacebook size={20} className="text-blue-400/70 group-hover:text-blue-400 transition-colors" />
+              <div>
+                <span className="text-cream text-sm font-medium block">Facebook</span>
+                <span className="text-dust/60 text-xs">Victoria Falls Boxing Academy</span>
+              </div>
+            </a>
+          </AnimatedSection>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TournamentHighlightsSection() {
+  return (
+    <section className="relative section border-t border-charcoal-lighter/30">
+      <div className="site-container">
+        <ChapterTitle
+          number="07"
+          title="Tournament Highlights"
+          subtitle="From local bouts to international championships — VFBA fighters carry the flag for Victoria Falls and Zimbabwe."
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+          <AnimatedSection direction="left">
+            <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
+              <Image
+                src="/images/vfba-event-1.jpg"
+                alt="5 Nations Boxing Championship"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <span className="text-gold text-xs tracking-[0.3em] uppercase block mb-2">
+                  <FiCalendar size={12} className="inline mr-1" />
+                  December 2019
+                </span>
+                <h3 className="font-display text-2xl text-cream mb-2">
+                  5 Nations Boxing Friendly Championship
+                </h3>
+                <p className="text-dust text-sm">
+                  Hosted at The Kingdom Hotel in Victoria Falls in conjunction
+                  with the Zimbabwe Boxing Federation. The event that put VFBA
+                  on the continental stage.
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection direction="right" delay={0.2}>
+            <div className="space-y-8">
+              <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
+                    <FiAward size={20} className="text-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-lg text-cream mb-1">
+                      Prince Urengwa
+                    </h4>
+                    <span className="text-rust-light text-xs tracking-wider uppercase">
+                      Zimbabwe Pinweight Gold Medalist
+                    </span>
+                    <p className="text-dust text-sm mt-2">
+                      Undefeated in his division. Defeated every opponent in the
+                      country up to age 13 in his weight class. On track for
+                      international representation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
+                    <FiAward size={20} className="text-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-lg text-cream mb-1">
+                      Personal Mpofu
+                    </h4>
+                    <span className="text-rust-light text-xs tracking-wider uppercase">
+                      Zimbabwe Paperweight Gold Medalist
+                    </span>
+                    <p className="text-dust text-sm mt-2">
+                      From a struggling family to national champion. Personal
+                      represents the future of Zimbabwean boxing and the power
+                      of the VFBA programme.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
+                    <FiMapPin size={20} className="text-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-lg text-cream mb-1">
+                      National Representation
+                    </h4>
+                    <span className="text-rust-light text-xs tracking-wider uppercase">
+                      Matabeleland North
+                    </span>
+                    <p className="text-dust text-sm mt-2">
+                      VFBA is the most active boxing club in the province. Our
+                      fighters regularly represent the region at national level
+                      and international tournaments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CommunityImpactSection() {
+  return (
+    <section className="relative section-lg bg-charcoal-light/50">
+      <div className="site-container">
+        <ChapterTitle
+          number="08"
+          title="Community Impact"
+          subtitle="From one man's fight to survive to a movement changing an entire community. The numbers tell the story."
+        />
+
+        <StatsRow
+          stats={[
+            { number: "40+", label: "Children Training" },
+            { number: "8", label: "Children Living On-Site" },
+            { number: "15+", label: "Years of Impact" },
+            { number: "2010", label: "Year Founded" },
+          ]}
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
+          <StoryCard
+            title="The Children's Home"
+            description="A safe haven for orphaned and at-risk boys. Shelter, food, education, and discipline — a place to call home. Eight children currently live on-site with Tobius and his wife."
+            href="/childrens-home"
+            tag="Shelter"
+            image="/images/vfba-children-1.jpg"
+            imageAlt="Children at VFBA Children's Home"
+            delay={0}
+          />
+          <StoryCard
+            title="From Dump to Champion"
+            description="In 2013, Tobius found 6-year-old Prince Urengwa collecting bottle caps at the town dump. Today, Prince is the undefeated Zimbabwe Pinweight Gold Medalist."
+            href="/about"
+            tag="Transformation"
+            image="/images/vfba-portrait-1.jpg"
+            imageAlt="Prince Urengwa - VFBA success story"
+            delay={0.1}
+          />
+          <StoryCard
+            title="School Fees &amp; Futures"
+            description="Every fee paid by an adult member at the gym funds a child's meals, school fees, and shelter. The community supports itself through sport."
+            href="/support"
+            tag="Impact"
+            image="/images/vfba-community-2.jpg"
+            imageAlt="VFBA community impact"
+            delay={0.2}
+          />
         </div>
       </div>
     </section>
@@ -620,7 +956,7 @@ function RiseSection() {
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center mb-10">
             <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
-              The Story Behind Rise
+              The Rise Film
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-cream leading-tight mb-6">
               The documentary that
@@ -630,7 +966,8 @@ function RiseSection() {
             <p className="text-dust text-base leading-relaxed">
               Victoria Falls Boxing Academy inspired the film Rise — the first
               Zimbabwean film ever selected for the Tribeca Film Festival.
-              Oscar-eligible. 19+ awards worldwide.
+              Oscar-eligible. 19+ awards worldwide. The story of Tobius, Prince,
+              and the Bush Boxers.
             </p>
           </div>
         </AnimatedSection>
@@ -705,47 +1042,111 @@ function RiseSection() {
   );
 }
 
-function SocialSection() {
-  const socials = [
-    { icon: FiInstagram, label: "Instagram", href: "https://www.instagram.com/victoriafallsboxingacademy", handle: "@victoriafallsboxingacademy", color: "hover:text-pink-400" },
-    { icon: FiFacebook, label: "Facebook", href: "https://www.facebook.com/victoriafallsboxingacademy", handle: "Victoria Falls Boxing Academy", color: "hover:text-blue-400" },
-    { icon: SiTiktok, label: "TikTok", href: "https://www.tiktok.com/@victoriafallsboxingacademy", handle: "@victoriafallsboxingacademy", color: "hover:text-cyan-400" },
-    { icon: SiYoutube, label: "YouTube", href: "https://www.youtube.com/@victoriafallsboxingacademy", handle: "@victoriafallsboxingacademy", color: "hover:text-red-400" },
+function GallerySection() {
+  const images = [
+    { src: "/images/vfba-gym-scene.jpg", alt: "VFBA gym interior", span: "col-span-2 row-span-2" },
+    { src: "/images/vfba-training-1.jpg", alt: "Morning training session", span: "" },
+    { src: "/images/vfba-children-1.jpg", alt: "Youth programme", span: "" },
+    { src: "/images/vfba-training-2.jpg", alt: "Sparring session", span: "" },
+    { src: "/images/vfba-community-1.jpg", alt: "Community event", span: "" },
+    { src: "/images/vfba-event-1.jpg", alt: "Tournament action", span: "col-span-2" },
+    { src: "/images/vfba-portrait-1.jpg", alt: "Fighter portrait", span: "" },
+    { src: "/images/vfba-community-2.jpg", alt: "Community impact", span: "" },
   ];
 
   return (
-    <section className="section bg-charcoal-light/50">
-      <div className="site-container text-center">
-        <AnimatedSection>
-          <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
-            Follow VFBA
-          </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-cream leading-tight mb-4">
-            Stay connected
-          </h2>
-          <p className="text-dust text-base max-w-xl mx-auto mb-12">
-            Training highlights, tournament results, community events, and
-            behind-the-scenes content from the gym.
-          </p>
-        </AnimatedSection>
+    <section className="relative section bg-charcoal-light/50 border-t border-charcoal-lighter/30">
+      <div className="site-container">
+        <ChapterTitle
+          number="09"
+          title="Gallery"
+          subtitle="Life inside and outside the VFBA gym — training, community, competition, and everything in between."
+          align="center"
+        />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-          {socials.map((social, i) => (
-            <AnimatedSection key={social.label} delay={i * 0.08}>
-              <a
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center gap-3 p-6 bg-charcoal/50 border border-charcoal-lighter rounded-sm hover:border-gold/20 transition-all duration-500"
-              >
-                <social.icon size={28} className={`text-dust ${social.color} transition-colors duration-300`} />
-                <div>
-                  <span className="text-cream text-sm font-medium block">{social.label}</span>
-                  <span className="text-dust/60 text-xs">{social.handle}</span>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {images.map((img, i) => (
+            <AnimatedSection key={i} delay={i * 0.05} className={img.span}>
+              <div className="relative aspect-square bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-all duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                  <span className="text-cream text-xs">{img.alt}</span>
                 </div>
-              </a>
+              </div>
             </AnimatedSection>
           ))}
+        </div>
+
+        <div className="text-center mt-14">
+          <CTAButton href="/gallery" variant="secondary" showArrow>
+            View Full Gallery
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactSection() {
+  return (
+    <section className="relative section border-t border-charcoal-lighter/30">
+      <div className="site-container text-center">
+        <ChapterTitle
+          number="10"
+          title="Get In Touch"
+          subtitle="Whether you want to join, volunteer, donate, or just say hello — we'd love to hear from you."
+          align="center"
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mt-4">
+          <AnimatedSection delay={0}>
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center">
+              <FiMapPin size={24} className="text-gold/60 mx-auto mb-4" />
+              <h4 className="font-display text-lg text-cream mb-2">Visit Us</h4>
+              <p className="text-dust text-sm leading-relaxed">
+                8480 Mkhosana Township<br />
+                Victoria Falls, Zimbabwe
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center">
+              <FiHeart size={24} className="text-gold/60 mx-auto mb-4" />
+              <h4 className="font-display text-lg text-cream mb-2">Support</h4>
+              <p className="text-dust text-sm leading-relaxed">
+                Donate, volunteer, or partner with us. Every contribution
+                changes a child&apos;s life.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center">
+              <FiUsers size={24} className="text-gold/60 mx-auto mb-4" />
+              <h4 className="font-display text-lg text-cream mb-2">Join</h4>
+              <p className="text-dust text-sm leading-relaxed">
+                Open to all ages and abilities. Youth train free.
+                Community gym for adults.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-14">
+          <CTAButton href="/contact" showArrow>
+            Contact Us
+          </CTAButton>
+          <CTAButton href="/support" variant="secondary" showArrow>
+            Support VFBA
+          </CTAButton>
         </div>
       </div>
     </section>
@@ -757,7 +1158,7 @@ function SupportSection() {
     <section className="relative section bg-gradient-to-b from-charcoal to-charcoal-light/50">
       <div className="site-container text-center">
         <ChapterTitle
-          number="06"
+          number="11"
           title="Be Part of What Happens Next"
           subtitle="Every child deserves a chance. Every punch thrown is a step forward. Your support makes it possible."
           align="center"
@@ -802,13 +1203,16 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <FightersShowcase />
       <TrainingSection />
-      <AcademyStatsSection />
+      <CoachesSection />
+      <FightersShowcase />
       <GymLifeSection />
-      <MissionSection />
+      <TrainingVideosSection />
+      <TournamentHighlightsSection />
+      <CommunityImpactSection />
       <RiseSection />
-      <SocialSection />
+      <GallerySection />
+      <ContactSection />
       <SupportSection />
     </>
   );

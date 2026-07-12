@@ -24,7 +24,7 @@ export default function PartnersPage() {
       name: "Rise Film Production",
       role: "Film Partner",
       description:
-        "Jessica J. Rowlands, Joe Njagu, and the Rise production team have brought Tobias's story to the world stage.",
+        "Jessica J. Rowlands, Joe Njagu, and the Rise production team have brought Tobius's story to the world stage.",
       url: "https://risezimbabwe.com",
     },
     {

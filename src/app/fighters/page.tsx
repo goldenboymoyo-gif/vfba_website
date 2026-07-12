@@ -18,10 +18,10 @@ export default function FightersPage() {
 
   const filtered =
     activeCategory === "All"
-      ? fighters.filter((f) => f.slug !== "tobias-mupfuti")
-      : fighters.filter((f) => f.category === activeCategory && f.slug !== "tobias-mupfuti");
+      ? fighters.filter((f) => f.slug !== "tobius-muposiwa")
+      : fighters.filter((f) => f.category === activeCategory && f.slug !== "tobius-muposiwa");
 
-  const coach = fighters.find((f) => f.slug === "tobias-mupfuti")!;
+  const coach = fighters.find((f) => f.slug === "tobius-muposiwa")!;
 
   return (
     <>

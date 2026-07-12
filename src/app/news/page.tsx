@@ -10,7 +10,7 @@ export default function NewsPage() {
     {
       title: "Packing a Punch: The True Story Behind Rise",
       description:
-        "The Guardian profiles Tobias Mupfuti and the VFBA story that inspired the Oscar-eligible film.",
+        "The Guardian profiles Tobius Muposiwa and the VFBA story that inspired the Oscar-eligible film.",
       tag: "Press",
       date: "December 2025",
       image: "/images/rise-pro-still-1.jpg",
@@ -37,11 +37,11 @@ export default function NewsPage() {
     {
       title: "Auditions Starring Hollywood Actor Chirisa Begin",
       description:
-        "Zimbabwe Now reports on the casting of Tongayi Chirisa as Coach Tobias in Rise.",
+        "Zimbabwe Now reports on the casting of Tongayi Chirisa as Coach Tobius in Rise.",
       tag: "Film",
       date: "March 2023",
       image: "/images/tobias-headshot.jpg",
-      imageAlt: "Coach Tobias Mupfuti headshot",
+      imageAlt: "Coach Tobius Muposiwa headshot",
     },
     {
       title: "VFBA Hosts Zimbabwe Boxing Federation National Open",

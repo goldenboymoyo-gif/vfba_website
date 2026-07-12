@@ -6,14 +6,14 @@ import { Quote } from "@/components/Cards";
 import CTAButton from "@/components/CTAButton";
 import Image from "next/image";
 
-export default function CoachTobiasPage() {
+export default function CoachTobiusPage() {
   return (
     <>
       <section className="relative page-hero overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/rise-tobias-landscape.jpg"
-            alt="Tobias Mupfuti landscape"
+            alt="Tobius Muposiwa landscape"
             fill
             className="object-cover opacity-15"
             sizes="100vw"
@@ -26,9 +26,9 @@ export default function CoachTobiasPage() {
               The Founder
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[0.95] max-w-4xl">
-              Tobias
+              Tobius
               <br />
-              <span className="text-gradient-gold">Mupfuti</span>
+              <span className="text-gradient-gold">Muposiwa</span>
             </h1>
             <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
               Founder, head coach, and the heart of Victoria Falls Boxing
@@ -44,14 +44,14 @@ export default function CoachTobiasPage() {
           <ChapterTitle
             number="01"
             title="A Fighter Before the Ring"
-            subtitle="Before he was a coach, Tobias was a survivor."
+            subtitle="Before he was a coach, Tobius was a survivor."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
               <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
-                  Tobias Mupfuti was eight years old when his father rejected him
+                  Tobius Muposiwa was eight years old when his father rejected him
                   and his mother could no longer provide. He found himself
                   homeless on the streets of Victoria Falls, surviving on
                   handouts from tourists.
@@ -73,7 +73,7 @@ export default function CoachTobiasPage() {
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
                   src="/images/tobias-headshot.jpg"
-                  alt="Coach Tobias Mupfuti"
+                  alt="Coach Tobius Muposiwa"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -96,7 +96,7 @@ export default function CoachTobiasPage() {
             <AnimatedSection>
               <Quote
                 quote="The academy is helping underprivileged children to attend education, provide them with shelter and give them food. We try by every means so that they do not have time to go to the streets."
-                author="Tobias Mupfuti"
+                author="Tobius Muposiwa"
                 role="Founder & Head Coach"
               />
             </AnimatedSection>
@@ -104,7 +104,7 @@ export default function CoachTobiasPage() {
             <AnimatedSection delay={0.2}>
               <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
-                  Today, Tobias runs VFBA with his wife Shuvai. They take in
+                  Today, Tobius runs VFBA with his wife Shuvai. They take in
                   homeless children, train them in boxing, send them to school,
                   and give them a home. About 40 children train for free at the
                   academy, and about eight live on-site.
@@ -112,7 +112,7 @@ export default function CoachTobiasPage() {
                 <p className="text-dust leading-relaxed">
                   The philosophy is simple: keep children occupied, tired, and
                   purposeful. After training, they do their homework and sleep —
-                  no time for the streets, for drugs, for the life Tobias himself
+                  no time for the streets, for drugs, for the life Tobius himself
                   barely escaped.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function CoachTobiasPage() {
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
                   src="/images/vfba-training-1.jpg"
-                  alt="Tobias coaching"
+                  alt="Tobius coaching"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -135,7 +135,7 @@ export default function CoachTobiasPage() {
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
                 <Image
                   src="/images/rise-still-1.jpg"
-                  alt="Tobias in Rise"
+                  alt="Tobius in Rise"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -151,27 +151,27 @@ export default function CoachTobiasPage() {
           <ChapterTitle
             number="03"
             title="In His Own Words"
-            subtitle="How the world learned Tobias's story through the film Rise."
+            subtitle="How the world learned Tobius's story through the film Rise."
           />
 
           <AnimatedSection>
             <div className="max-w-3xl mx-auto">
               <p className="text-cream/90 text-base leading-relaxed mb-6">
                 When Jessica J. Rowlands, who grew up in Victoria Falls, heard
-                Tobias&apos;s story, she wrote the screenplay for Rise. Hollywood
-                actor Tongayi Chirisa was cast as Coach Tobias, and an
+                Tobius&apos;s story, she wrote the screenplay for Rise. Hollywood
+                actor Tongayi Chirisa was cast as Coach Tobius, and an
                 eight-year-old named Sikhanyiso Ngwenya — discovered through
                 street casting — was cast as Rise.
               </p>
               <p className="text-dust leading-relaxed mb-6">
-                Tobias was credited as executive producer and was heavily
+                Tobius was credited as executive producer and was heavily
                 involved throughout production. He appeared on set every day. He
                 was even a stunt double for Chirisa in the film. The story had
                 to be authentic — because it was his.
               </p>
               <p className="text-dust leading-relaxed">
                 The film premiered at Tribeca in June 2025, won 19+ awards
-                worldwide, and was endorsed by Viola Davis. Tobias&apos;s story
+                worldwide, and was endorsed by Viola Davis. Tobius&apos;s story
                 had reached the world.
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function CoachTobiasPage() {
       <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/50">
         <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
-            Help Tobias continue his work
+            Help Tobius continue his work
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-14 pt-2">
             <CTAButton href="/support" showArrow size="lg">

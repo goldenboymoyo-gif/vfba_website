@@ -107,7 +107,7 @@ export default function RiseFilmPage() {
                   Rise follows a young boy named Rise, who lives alone on a
                   rubbish dump in Zimbabwe and survives by his determination and
                   resilience. After being attacked by local bullies, he is noticed
-                  by Coach Tobias, a withdrawn boxing trainer who reluctantly
+                  by Coach Tobius, a withdrawn boxing trainer who reluctantly
                   intervenes and brings the boy to safety.
                 </p>
                 <p className="text-dust leading-relaxed">
@@ -143,7 +143,7 @@ export default function RiseFilmPage() {
                     <span className="text-cream">Jacques Naudé</span>
                   </div>
                   <div className="flex justify-between border-b border-charcoal-lighter pb-3">
-                    <span>Coach Tobias</span>
+                    <span>Coach Tobius</span>
                     <span className="text-cream">Tongayi Chirisa</span>
                   </div>
                   <div className="flex justify-between border-b border-charcoal-lighter pb-3">
@@ -253,7 +253,7 @@ export default function RiseFilmPage() {
               >
                 <Image
                   src="/images/tobias-headshot.jpg"
-                  alt="Tobias Mupfuti BBC interview"
+                  alt="Tobius Muposiwa BBC interview"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -269,7 +269,7 @@ export default function RiseFilmPage() {
                     BBC Outlook Interview
                   </span>
                   <span className="text-dust text-sm">
-                    Tobias Mupfuti on BBC Radio
+                    Tobius Muposiwa on BBC Radio
                   </span>
                 </div>
               </a>
@@ -309,7 +309,7 @@ export default function RiseFilmPage() {
                 and the home.
               </p>
               <p className="text-dust leading-relaxed">
-                Tobias Mupfuti was credited as executive producer and was
+                Tobius Muposiwa was credited as executive producer and was
                 involved throughout production. He appeared on set every day and
                 was even a stunt double for Chirisa in the film.
               </p>
@@ -354,7 +354,7 @@ export default function RiseFilmPage() {
             The story behind the film is real
           </h2>
           <p className="text-dust text-base max-w-xl mx-auto mb-8">
-            VFBA exists because of Tobias Mupfuti. Support the academy that
+            VFBA exists because of Tobius Muposiwa. Support the academy that
             inspired Rise.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

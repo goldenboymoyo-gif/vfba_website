@@ -50,8 +50,9 @@ export default function ProgrammesPage() {
                 </p>
                 <p className="text-dust leading-relaxed">
                   The programme has produced competitive boxers who have represented
-                  VFBA in regional and national tournaments, including athletes
-                  like Lennox &apos;The Hurricane&apos; Chigango and Crein &apos;The Beast&apos; Moyo.
+                  VFBA in regional and national tournaments, including Prince
+                  Urengwa — the undefeated Zimbabwe Pinweight Gold Medalist — and
+                  Personal Mpofu, the Zimbabwe Paperweight Gold Medalist.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
@@ -128,7 +129,7 @@ export default function ProgrammesPage() {
                 </p>
                 <p className="text-dust leading-relaxed mb-8">
                   The facility also includes a private room used for meditation and
-                  yoga sessions — reflecting Tobias&apos;s holistic approach to
+                  yoga sessions — reflecting Tobius&apos;s holistic approach to
                   physical and mental wellbeing.
                 </p>
                 <CTAButton href="/contact" showArrow>
@@ -178,7 +179,7 @@ export default function ProgrammesPage() {
                   The gym features a full-size boxing ring, heavy bags, speed
                   bags, and a complete fitness area. There is also a private
                   room used for meditation and yoga sessions — reflecting
-                  Tobias&apos;s holistic approach to physical and mental
+                  Tobius&apos;s holistic approach to physical and mental
                   wellbeing.
                 </p>
                 <p className="text-dust leading-relaxed mb-8">

@@ -44,7 +44,7 @@ export default function TournamentsPage() {
                   Zambia, Botswana, and Namibia competing.
                 </p>
                 <p className="text-dust leading-relaxed">
-                  The tournament was part of Tobias Mupfuti&apos;s broader
+                  The tournament was part of Tobius Muposiwa&apos;s broader
                   vision: using boxing as a vehicle for sports tourism and
                   putting Victoria Falls on the international boxing map — a goal
                   that aligns with the city&apos;s existing dependence on

@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     template: "%s | Victoria Falls Boxing Academy",
   },
   description:
-    "Victoria Falls Boxing Academy — a professional boxing academy and children's home in Zimbabwe. Developing fighters, building discipline, and changing lives through boxing. Founded by Tobias Mupfuti.",
+    "Victoria Falls Boxing Academy — a professional boxing academy and children's home in Zimbabwe. Developing fighters, building discipline, and changing lives through boxing. Founded by Tobius Muposiwa.",
   keywords: [
     "Victoria Falls Boxing Academy",
     "VFBA",
-    "Tobias Mupfuti",
+    "Tobius Muposiwa",
     "boxing academy Zimbabwe",
     "boxing Victoria Falls",
     "youth boxing Zimbabwe",
@@ -101,7 +101,7 @@ export default function RootLayout({
                 "A professional boxing academy and children's home in Victoria Falls, Zimbabwe, developing fighters and transforming lives through boxing.",
               founder: {
                 "@type": "Person",
-                name: "Tobias Mupfuti",
+                name: "Tobius Muposiwa",
               },
               address: {
                 "@type": "PostalAddress",
