@@ -55,7 +55,7 @@ export default function Navigation() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-[80rem] mx-auto px-5 md:px-8 lg:px-16">
+        <div className="max-w-[80rem] mx-auto px-5 md:px-8 lg:px-20">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link
               href="/"

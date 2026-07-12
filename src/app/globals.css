@@ -275,44 +275,44 @@ h1, h2, h3, h4, h5, h6 {
   }
   @media (min-width: 1024px) {
     .site-container {
-      padding-left: 4rem;
-      padding-right: 4rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
 
-  /* Section — standard vertical spacing: 80/112/140px */
+  /* Section — standard vertical spacing: 88/120/148px */
   .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
   }
   @media (min-width: 768px) {
     .section {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
     }
   }
   @media (min-width: 1024px) {
     .section {
-      padding-top: 8.75rem;
-      padding-bottom: 8.75rem;
+      padding-top: 9.25rem;
+      padding-bottom: 9.25rem;
     }
   }
 
-  /* Section Large — more breathing room: 96/128/160px */
+  /* Section Large — more breathing room: 112/144/176px */
   .section-lg {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
   @media (min-width: 768px) {
     .section-lg {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 9rem;
+      padding-bottom: 9rem;
     }
   }
   @media (min-width: 1024px) {
     .section-lg {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
+      padding-top: 11rem;
+      padding-bottom: 11rem;
     }
   }
 
@@ -337,18 +337,18 @@ h1, h2, h3, h4, h5, h6 {
   /* Page Hero — inner page hero spacing */
   .page-hero {
     padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
   @media (min-width: 768px) {
     .page-hero {
       padding-top: 10rem;
-      padding-bottom: 7rem;
+      padding-bottom: 8rem;
     }
   }
   @media (min-width: 1024px) {
     .page-hero {
       padding-top: 12rem;
-      padding-bottom: 9rem;
+      padding-bottom: 10rem;
     }
   }
 }
