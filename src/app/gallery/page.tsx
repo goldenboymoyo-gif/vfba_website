@@ -118,7 +118,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           {/* Category Filters */}
           <div className="flex flex-wrap gap-2 mb-12">
@@ -174,7 +174,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Video Section */}
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container text-center">
           <ChapterTitle
             number="01"

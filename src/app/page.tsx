@@ -141,7 +141,7 @@ function HeroSection() {
 
 function AboutSection() {
   return (
-    <section className="relative section-lg">
+    <section className="relative section-lg border-t border-charcoal-lighter/30">
       <div className="site-container">
         <ChapterTitle
           number="01"
@@ -214,7 +214,7 @@ function FightersShowcase() {
   const showcaseFighters = fighters.filter((f) => f.slug !== "tobias-mupfuti");
 
   return (
-    <section className="relative section bg-charcoal-light/30 overflow-hidden">
+    <section className="relative section bg-charcoal-light/50 overflow-hidden">
       <div className="site-container">
         <ChapterTitle
           number="02"
@@ -272,7 +272,7 @@ function FightersShowcase() {
 
 function TrainingSection() {
   return (
-    <section className="relative section">
+    <section className="relative section border-t border-charcoal-lighter/30">
       <div className="site-container">
         <ChapterTitle
           number="03"
@@ -294,7 +294,7 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiBox size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <h3 className="font-display text-lg text-cream mb-3">
                   Youth Programme
                 </h3>
@@ -319,7 +319,7 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiUsers size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <h3 className="font-display text-lg text-cream mb-3">
                   Community Gym
                 </h3>
@@ -343,7 +343,7 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiTarget size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <h3 className="font-display text-lg text-cream mb-3">
                   Competitive Boxing
                 </h3>
@@ -367,7 +367,7 @@ function TrainingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
                 <FiHeart size={20} className="absolute top-4 right-4 text-gold/60" />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <h3 className="font-display text-lg text-cream mb-3">
                   Fitness Boxing
                 </h3>
@@ -391,7 +391,7 @@ function TrainingSection() {
 
 function AcademyStatsSection() {
   return (
-    <section className="relative section-lg bg-charcoal-light/30">
+    <section className="relative section-lg bg-charcoal-light/50">
       <div className="site-container">
         <ChapterTitle
           number="04"
@@ -452,7 +452,7 @@ function GymLifeSection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -30]);
 
   return (
-    <section ref={ref} className="relative section overflow-hidden">
+    <section ref={ref} className="relative section overflow-hidden border-t border-charcoal-lighter/30">
       <div className="site-container">
         <ChapterTitle
           number="05"
@@ -564,7 +564,7 @@ function GymLifeSection() {
 
 function MissionSection() {
   return (
-    <section className="relative section overflow-hidden bg-charcoal-light/30">
+    <section className="relative section overflow-hidden bg-charcoal-light/50">
       <div className="absolute inset-0 bg-gradient-to-r from-rust/5 to-green/5" />
       <div className="site-container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -615,7 +615,7 @@ function RiseSection() {
   const scale = useTransform(scrollYProgress, [0, 0.5], [0.96, 1]);
 
   return (
-    <section ref={ref} className="relative section">
+    <section ref={ref} className="relative section border-t border-charcoal-lighter/30">
       <div className="site-container">
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center mb-10">
@@ -714,7 +714,7 @@ function SocialSection() {
   ];
 
   return (
-    <section className="section bg-charcoal-light/30">
+    <section className="section bg-charcoal-light/50">
       <div className="site-container text-center">
         <AnimatedSection>
           <span className="text-gold/70 text-xs tracking-[0.5em] uppercase block mb-4">
@@ -729,7 +729,7 @@ function SocialSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
           {socials.map((social, i) => (
             <AnimatedSection key={social.label} delay={i * 0.08}>
               <a
@@ -754,7 +754,7 @@ function SocialSection() {
 
 function SupportSection() {
   return (
-    <section className="relative section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+    <section className="relative section bg-gradient-to-b from-charcoal to-charcoal-light/50">
       <div className="site-container text-center">
         <ChapterTitle
           number="06"

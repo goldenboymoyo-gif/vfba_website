@@ -57,7 +57,7 @@ export default function RiseFilmPage() {
       </section>
 
       {/* Trailer / Poster */}
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <AnimatedSection>
             <div className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer">
@@ -92,7 +92,7 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <ChapterTitle
             number="01"
@@ -165,7 +165,7 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container">
           <ChapterTitle
             number="02"
@@ -206,7 +206,7 @@ export default function RiseFilmPage() {
       </section>
 
       {/* Interviews & Behind the Scenes */}
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <ChapterTitle
             number="03"
@@ -285,7 +285,7 @@ export default function RiseFilmPage() {
         />
       )}
 
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container">
           <ChapterTitle
             number="04"
@@ -318,7 +318,7 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <ChapterTitle
             number="05"
@@ -348,7 +348,7 @@ export default function RiseFilmPage() {
         </div>
       </section>
 
-      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/50">
         <div className="site-container text-center mt-14">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             The story behind the film is real

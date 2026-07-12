@@ -33,7 +33,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Beginning */}
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <ChapterTitle
             number="01"
@@ -108,7 +108,7 @@ export default function AboutPage() {
       </section>
 
       {/* Growth */}
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container">
           <ChapterTitle
             number="02"
@@ -152,7 +152,7 @@ export default function AboutPage() {
       </section>
 
       {/* Impact Stats */}
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <StatsRow
             stats={[
@@ -166,7 +166,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/50">
         <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Meet the man behind the story

@@ -23,7 +23,7 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <AnimatedSection>
@@ -66,7 +66,7 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container">
           <ChapterTitle
             number="01"
@@ -116,7 +116,7 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <AnimatedSection>
             <Quote
@@ -127,7 +127,7 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/50">
         <div className="site-container text-center">
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
             Join our mission

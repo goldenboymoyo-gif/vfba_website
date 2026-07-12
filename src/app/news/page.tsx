@@ -83,7 +83,7 @@ export default function NewsPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, i) => (
@@ -101,7 +101,7 @@ export default function NewsPage() {
         </div>
       </section>
 
-      <section className="section bg-charcoal-light/30">
+      <section className="section bg-charcoal-light/50">
         <div className="site-container text-center">
           <ChapterTitle
             number="01"
@@ -133,7 +133,7 @@ export default function NewsPage() {
       </section>
 
       {/* CTA */}
-      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/30">
+      <section className="section bg-gradient-to-b from-charcoal to-charcoal-light/50">
         <div className="site-container text-center">
           <AnimatedSection>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream mb-6">
