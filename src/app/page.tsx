@@ -10,7 +10,6 @@ import {
   FiFacebook,
   FiInstagram,
   FiUsers,
-  FiBox,
   FiTarget,
   FiHeart,
   FiAward,
@@ -23,7 +22,6 @@ import ChapterTitle from "@/components/ChapterTitle";
 import { StatsRow } from "@/components/Stats";
 import { StoryCard, Quote } from "@/components/Cards";
 import CTAButton from "@/components/CTAButton";
-import { fighters } from "@/lib/fighters";
 
 function HeroSection() {
   const ref = useRef(null);
@@ -223,118 +221,129 @@ function AboutSection() {
   );
 }
 
-function TrainingSection() {
+function DayAtVFBASection() {
+  const schedule = [
+    { time: "05:00", title: "Morning Road Run", description: "The Bush Boxers tradition — fighters hit the streets before sunrise, running the main route into Victoria Falls town.", image: "/images/vfba-training-1.jpg" },
+    { time: "06:30", title: "Bush Training", description: "Road work, calisthenics, and conditioning in the open air. The discipline that started under trees continues every morning.", image: "/images/vfba-community-1.jpg" },
+    { time: "08:00", title: "Breakfast & School", description: "The children return, eat breakfast, and head to school. Education comes first — every child at VFBA attends classes.", image: "/images/vfba-children-1.jpg" },
+    { time: "14:00", title: "After School Homework", description: "Back from school, the children do their homework under supervision. Tobius ensures study time before any training.", image: "/images/vfba-children-2.jpg" },
+    { time: "16:00", title: "Gym Session", description: "Boxing training in the ring — technique, sparring, bag work, and conditioning. Juniors and adults train side by side.", image: "/images/vfba-gym-scene.jpg" },
+    { time: "18:00", title: "Community Open Gym", description: "Adult members arrive for evening sessions. Every fee paid here funds a child's meals, school fees, and shelter.", image: "/images/vfba-training-2.jpg" },
+    { time: "20:00", title: "Rest & Recovery", description: "Dinner, rest, and sleep. No time for the streets. This is the structure that keeps children safe and focused.", image: "/images/vfba-event-1.jpg" },
+  ];
+
   return (
-    <section className="relative section bg-charcoal-light/50">
+    <section className="relative section bg-charcoal-light/50 border-t border-charcoal-lighter/30">
       <div className="site-container">
         <ChapterTitle
           number="02"
-          title="Training Programmes"
-          subtitle="Professional coaching for children and adults. From first steps to competitive fighters — VFBA is open to the community."
+          title="A Day at VFBA"
+          subtitle="From sunrise road runs to evening rest — the structure that keeps children off the streets and in the ring."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="relative">
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-charcoal-lighter/50 -translate-x-1/2" />
+
+          <div className="space-y-12">
+            {schedule.map((item, i) => (
+              <AnimatedSection key={item.time} delay={i * 0.08} direction={i % 2 === 0 ? "left" : "right"}>
+                <div className={`flex flex-col md:flex-row items-start gap-6 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
+                  <div className={`flex-1 ${i % 2 === 1 ? "md:text-right" : ""}`}>
+                    <div className={`flex items-center gap-3 mb-3 ${i % 2 === 1 ? "md:justify-end" : ""}`}>
+                      <span className="text-gold font-display text-lg font-bold">{item.time}</span>
+                      <div className="w-2 h-2 rounded-full bg-gold shrink-0 relative z-10" />
+                    </div>
+                    <h3 className="font-display text-xl text-cream mb-2">{item.title}</h3>
+                    <p className="text-dust text-sm leading-relaxed">{item.description}</p>
+                  </div>
+                  <div className="w-full md:w-48 shrink-0">
+                    <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 192px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ImpactSection() {
+  return (
+    <section className="relative section-lg border-t border-charcoal-lighter/30">
+      <div className="site-container">
+        <ChapterTitle
+          number="03"
+          title="Our Impact"
+          subtitle="From the town dump to the world stage. The numbers tell the story."
+          align="center"
+        />
+
+        <StatsRow
+          stats={[
+            { number: "40+", label: "Children Training" },
+            { number: "8", label: "Children Living On-Site" },
+            { number: "15+", label: "Years of Impact" },
+            { number: "2010", label: "Year Founded" },
+          ]}
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
           <AnimatedSection delay={0}>
-            <div className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/vfba-children-1.jpg"
-                  alt="Youth boxing programme"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
-                <FiBox size={20} className="absolute top-4 right-4 text-gold/60" />
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center h-full">
+              <div className="w-14 h-14 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-5">
+                <FiAward size={24} className="text-gold" />
               </div>
-              <div className="p-8">
-                <h3 className="font-display text-lg text-cream mb-3">
-                  Youth Programme
-                </h3>
-                <p className="text-dust text-sm leading-relaxed">
-                  Free training for underprivileged children. Boxing technique,
-                  fitness, and life skills. No child is turned away.
-                </p>
-              </div>
+              <h3 className="font-display text-xl text-cream mb-3">National Champions</h3>
+              <p className="text-dust text-sm leading-relaxed">
+                Prince Urengwa — undefeated Zimbabwe Pinweight Gold Medalist.
+                Personal Mpofu — Zimbabwe Paperweight Gold Medalist. Both
+                training at VFBA since childhood.
+              </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <div className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/vfba-gym-scene.jpg"
-                  alt="Community gym"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
-                <FiUsers size={20} className="absolute top-4 right-4 text-gold/60" />
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center h-full">
+              <div className="w-14 h-14 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-5">
+                <FiHeart size={24} className="text-gold" />
               </div>
-              <div className="p-8">
-                <h3 className="font-display text-lg text-cream mb-3">
-                  Community Gym
-                </h3>
-                <p className="text-dust text-sm leading-relaxed">
-                  Open to adults. A small fee to train — those funds support the children&apos;s meals, school fees, and shelter.
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.15}>
-            <div className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/vfba-training-2.jpg"
-                  alt="Competitive boxing"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
-                <FiTarget size={20} className="absolute top-4 right-4 text-gold/60" />
-              </div>
-              <div className="p-8">
-                <h3 className="font-display text-lg text-cream mb-3">
-                  Competitive Boxing
-                </h3>
-                <p className="text-dust text-sm leading-relaxed">
-                  Five-nation tournaments. National representation. Putting VFBA on the map.
-                </p>
-              </div>
+              <h3 className="font-display text-xl text-cream mb-3">Children&apos;s Home</h3>
+              <p className="text-dust text-sm leading-relaxed">
+                Eight children live on-site with Tobius and his wife. Shelter,
+                food, education, and discipline — a family for children who
+                had none.
+              </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="group bg-charcoal/50 border border-charcoal-lighter rounded-sm overflow-hidden hover:border-gold/20 transition-all duration-500 h-full">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/vfba-community-1.jpg"
-                  alt="Fitness boxing"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
-                <FiHeart size={20} className="absolute top-4 right-4 text-gold/60" />
+            <div className="bg-charcoal/50 border border-charcoal-lighter rounded-sm p-8 text-center h-full">
+              <div className="w-14 h-14 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mx-auto mb-5">
+                <FiTarget size={24} className="text-gold" />
               </div>
-              <div className="p-8">
-                <h3 className="font-display text-lg text-cream mb-3">
-                  Fitness Boxing
-                </h3>
-                <p className="text-dust text-sm leading-relaxed">
-                  Personal training, fitness sessions, and holistic wellbeing. Every fee funds a child.
-                </p>
-              </div>
+              <h3 className="font-display text-xl text-cream mb-3">International Reach</h3>
+              <p className="text-dust text-sm leading-relaxed">
+                5 Nations Championship hosts. Rise film — Tribeca 2025,
+                Oscar-eligible, 19+ awards worldwide. Victoria Falls on the
+                global boxing map.
+              </p>
             </div>
           </AnimatedSection>
         </div>
 
         <div className="text-center mt-14">
-          <CTAButton href="/programmes" variant="secondary" showArrow>
-            View All Programmes
+          <CTAButton href="/about" variant="secondary" showArrow>
+            Read Our Full Story
           </CTAButton>
         </div>
       </div>
@@ -450,66 +459,6 @@ function CoachesSection() {
             </div>
           </div>
         </AnimatedSection>
-      </div>
-    </section>
-  );
-}
-
-function FightersShowcase() {
-  const showcaseFighters = fighters.filter((f) => f.slug !== "tobius-muposiwa");
-
-  return (
-    <section className="relative section bg-charcoal-light/50 overflow-hidden">
-      <div className="site-container">
-        <ChapterTitle
-          number="04"
-          title="Our Fighters"
-          subtitle="Real athletes. Real stories. From the town dump to national champion — these are the fighters who represent VFBA."
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-          {showcaseFighters.map((fighter, i) => (
-            <AnimatedSection key={fighter.slug} delay={i * 0.1}>
-              <Link href="/fighters" className="block group">
-                <div className="relative aspect-[3/4] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter hover:border-gold/30 transition-all duration-500 fighter-card">
-                  <Image
-                    src={fighter.image}
-                    alt={fighter.name}
-                    fill
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                    <span className="text-rust-light text-xs tracking-[0.3em] uppercase block mb-1">
-                      {fighter.weightClass}
-                    </span>
-                    <h3 className="font-display text-xl text-cream mb-1 group-hover:text-gold transition-colors duration-300">
-                      {fighter.name}
-                    </h3>
-                    <span className="text-dust text-sm">&ldquo;{fighter.nickname}&rdquo;</span>
-                    <div className="flex gap-4 mt-2">
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-gold font-bold">{fighter.stats.wins}</span> W
-                      </span>
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-rust-light font-bold">{fighter.stats.losses}</span> L
-                      </span>
-                      <span className="text-cream/80 text-xs">
-                        <span className="text-dust font-bold">{fighter.stats.draws}</span> D
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </AnimatedSection>
-          ))}
-        </div>
-
-        <div className="text-center mt-14">
-          <CTAButton href="/fighters" variant="secondary" showArrow>
-            View All Fighters
-          </CTAButton>
-        </div>
       </div>
     </section>
   );
@@ -1203,9 +1152,9 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <TrainingSection />
+      <DayAtVFBASection />
+      <ImpactSection />
       <CoachesSection />
-      <FightersShowcase />
       <GymLifeSection />
       <TrainingVideosSection />
       <TournamentHighlightsSection />
