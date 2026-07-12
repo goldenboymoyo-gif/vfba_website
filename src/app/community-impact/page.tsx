@@ -79,14 +79,15 @@ export default function CommunityImpactPage() {
             <AnimatedSection delay={0.2}>
               <div className="bg-charcoal-light/50 border border-charcoal-lighter rounded-sm p-8">
                 <h3 className="font-display text-2xl text-cream mb-4">
-                  Prince Urengwa&apos;s Story
+                  Bright Moyo&apos;s Story
                 </h3>
                 <p className="text-dust leading-relaxed mb-4">
-                  &ldquo;Before VFBA, I was at the dump collecting bottle tops.
-                  Now I collect gold medals. Tobius gave me a chance when nobody
-                  else would.&rdquo;
+                  &ldquo;If the academy had not paid for my fees, the chances were high
+                  that I would have been into drugs. Some of my friends are into
+                  drugs. The academy is giving me hope. I saw myself in that
+                  young boy in the film.&rdquo;
                 </p>
-                <span className="text-gold text-sm">— Prince Urengwa, VFBA Fighter</span>
+                <span className="text-gold text-sm">— Bright Moyo, VFBA Boxer</span>
               </div>
             </AnimatedSection>
           </div>

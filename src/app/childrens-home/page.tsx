@@ -41,8 +41,8 @@ export default function ChildrensHomePage() {
               <div className="space-y-7">
                 <p className="text-cream/90 text-base leading-relaxed">
                   Before proper housing existed, children at VFBA lived and
-                  slept at the gym — some under the boxing ring itself. Tobius
-                  and his wife took in children who had been abandoned,
+                  slept at the gym — some under the boxing ring itself. Tobias
+                  and his wife Shuvai took in children who had been abandoned,
                   orphaned, or rejected by their families.
                 </p>
                 <p className="text-dust leading-relaxed">
@@ -108,7 +108,7 @@ export default function ChildrensHomePage() {
               { title: "Safe Housing", text: "A proper roof, a bed, and safety — the basics every child deserves." },
               { title: "Meals", text: "Three meals a day, ensuring children are healthy and nourished." },
               { title: "Education", text: "School fees paid, homework supported, a future built." },
-              { title: "Family", text: "Tobius, Shuvai, and the VFBA community — a family for children who have none." },
+              { title: "Family", text: "Tobias, Shuvai, and the VFBA community — a family for children who have none." },
             ].map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
                 <div className="bg-charcoal-light/30 border border-charcoal-lighter rounded-sm p-6 hover:border-gold/20 transition-colors duration-500 h-full">
@@ -127,7 +127,7 @@ export default function ChildrensHomePage() {
             Help us build more rooms
           </h2>
           <p className="text-dust text-lg max-w-xl mx-auto mb-8">
-            Tobius plans to add 10 more rooms to accommodate more children.
+            Tobias plans to add 10 more rooms to accommodate more children.
             Your support makes that possible.
           </p>
           <div className="mt-14">

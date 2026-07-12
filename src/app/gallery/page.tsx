@@ -6,7 +6,7 @@ import ChapterTitle from "@/components/ChapterTitle";
 import Image from "next/image";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const categories = ["All", "Gym Life", "Training", "Fighters", "Community", "Tournaments", "Portraits", "Rise Film"] as const;
+const categories = ["All", "Gym Life", "Fighters", "Training", "Community", "Tournaments", "Rise Film", "Portraits"] as const;
 type Category = (typeof categories)[number];
 
 interface GalleryImage {
@@ -34,7 +34,7 @@ const galleryImages: GalleryImage[] = [
   { src: "/images/vfba-victoria-falls.jpg", alt: "Victoria Falls", caption: "Victoria Falls, Zimbabwe", category: "Community", aspect: "aspect-[16/9]" },
   { src: "/images/vfba-portrait-1.jpg", alt: "VFBA fighter portrait", caption: "VFBA Fighter — Portrait", category: "Fighters", aspect: "aspect-[3/4]" },
   { src: "/images/vfba-portrait-2.jpg", alt: "VFBA fighter portrait", caption: "VFBA Fighter — Portrait", category: "Fighters", aspect: "aspect-[3/4]" },
-  { src: "/images/rise-tobias-portrait.jpg", alt: "Coach Tobius portrait", caption: "Coach Tobius Muposiwa", category: "Fighters", aspect: "aspect-[3/4]" },
+  { src: "/images/rise-tobias-portrait.jpg", alt: "Coach Tobias portrait", caption: "Coach Tobias Mupfuti", category: "Fighters", aspect: "aspect-[3/4]" },
   { src: "/images/rise-pro-still-1.jpg", alt: "Rise film production still", caption: "Rise — Production still", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-pro-still-2.jpg", alt: "Rise film scene", caption: "Rise — Behind the scenes", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-pro-still-3.jpg", alt: "Rise production photo", caption: "Rise — Cast and crew", category: "Rise Film", aspect: "aspect-[4/3]" },
@@ -46,11 +46,11 @@ const galleryImages: GalleryImage[] = [
   { src: "/images/rise-still-5.jpg", alt: "Rise still", caption: "Rise — Film still", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-intimate-scene.jpg", alt: "Rise intimate scene", caption: "Rise — Intimate scene", category: "Rise Film", aspect: "aspect-[4/3]" },
   { src: "/images/rise-landscape.jpg", alt: "Rise landscape", caption: "Zimbabwe landscape", category: "Rise Film", aspect: "aspect-[16/9]" },
-  { src: "/images/rise-tobias-portrait.jpg", alt: "Tobius Muposiwa portrait", caption: "Coach Tobius Muposiwa", category: "Portraits", aspect: "aspect-[3/4]" },
-  { src: "/images/tobias-headshot.jpg", alt: "Coach Tobius headshot", caption: "Coach Tobius — Headshot", category: "Portraits", aspect: "aspect-[3/4]" },
+  { src: "/images/rise-tobias-portrait.jpg", alt: "Tobias Mupfuti portrait", caption: "Coach Tobias Mupfuti", category: "Portraits", aspect: "aspect-[3/4]" },
+  { src: "/images/tobias-headshot.jpg", alt: "Coach Tobias headshot", caption: "Coach Tobias — Headshot", category: "Portraits", aspect: "aspect-[3/4]" },
   { src: "/images/vfba-portrait-1.jpg", alt: "VFBA portrait", caption: "Portrait — VFBA member", category: "Portraits", aspect: "aspect-[3/4]" },
   { src: "/images/vfba-portrait-2.jpg", alt: "VFBA portrait", caption: "Portrait — VFBA member", category: "Portraits", aspect: "aspect-[3/4]" },
-  { src: "/images/rise-tobias-landscape.jpg", alt: "Tobius landscape photo", caption: "Coach Tobius — Landscape", category: "Portraits", aspect: "aspect-[16/9]" },
+  { src: "/images/rise-tobias-landscape.jpg", alt: "Tobias landscape photo", caption: "Coach Tobias — Landscape", category: "Portraits", aspect: "aspect-[16/9]" },
 ];
 
 export default function GalleryPage() {
@@ -111,8 +111,8 @@ export default function GalleryPage() {
               Gallery
             </h1>
             <p className="mt-6 text-dust text-base md:text-lg max-w-2xl leading-relaxed">
-              Authentic images from the gym, the children&apos;s home, training sessions,
-              tournaments, and community events — real moments, real people.
+              Authentic images from the gym, the children&apos;s home, tournaments,
+              community events, and the Rise film — real moments, real people.
             </p>
           </AnimatedSection>
         </div>

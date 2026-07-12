@@ -8,7 +8,7 @@ import { SiTiktok, SiYoutube } from "react-icons/si";
 const footerLinks = {
   academy: [
     { href: "/about", label: "Our Story" },
-    { href: "/coach-tobias", label: "Coach Tobius" },
+    { href: "/coach-tobias", label: "Coach Tobias" },
     { href: "/mission", label: "Mission & Vision" },
     { href: "/programmes", label: "Boxing Programmes" },
     { href: "/childrens-home", label: "Children's Home" },

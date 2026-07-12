@@ -130,7 +130,7 @@ const otherWays = [
   {
     title: "Visit the Academy",
     description:
-      "Come to Victoria Falls, meet Tobius and the children, and see the impact firsthand.",
+      "Come to Victoria Falls, meet Tobias and the children, and see the impact firsthand.",
     href: "/contact",
   },
   {
@@ -367,7 +367,7 @@ export default function SupportPage() {
               {
                 icon: <FiCheck size={20} className="text-gold" />,
                 title: "Accountability",
-                text: "VFBA is a registered entity in Zimbabwe. Tobius Muposiwa and the team provide regular updates through social media and direct communication with donors.",
+                text: "VFBA is a registered entity in Zimbabwe. Tobias Mupfuti and the team provide regular updates through social media and direct communication with donors.",
               },
             ].map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
@@ -626,7 +626,7 @@ export default function SupportPage() {
         <div className="site-container text-center">
           <AnimatedSection>
             <span className="text-gold/60 text-xs tracking-[0.4em] uppercase block mb-6">
-              In Tobius&apos;s Words
+              In Tobias&apos;s Words
             </span>
             <blockquote className="font-display text-3xl md:text-4xl lg:text-5xl text-cream/90 leading-snug max-w-3xl mx-auto italic">
               &ldquo;We try by every means so that they do not have time to go
@@ -635,7 +635,7 @@ export default function SupportPage() {
             </blockquote>
             <div className="mt-8">
               <span className="text-gold font-medium">
-                Tobius Muposiwa
+                Tobias Mupfuti
               </span>
               <span className="block text-dust text-sm mt-1">
                 Founder & Head Coach, VFBA

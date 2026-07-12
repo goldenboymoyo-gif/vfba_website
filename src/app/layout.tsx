@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     template: "%s | Victoria Falls Boxing Academy",
   },
   description:
-    "Victoria Falls Boxing Academy — a professional boxing academy and children's home in Zimbabwe. Developing fighters, building discipline, and changing lives through boxing. Founded by Tobius Muposiwa.",
+    "Victoria Falls Boxing Academy — a professional boxing academy and children's home in Zimbabwe. Developing fighters, building discipline, and changing lives through boxing. Founded by Tobias Mupfuti.",
   keywords: [
     "Victoria Falls Boxing Academy",
     "VFBA",
-    "Tobius Muposiwa",
+    "Tobias Mupfuti",
     "boxing academy Zimbabwe",
     "boxing Victoria Falls",
     "youth boxing Zimbabwe",
@@ -101,7 +101,7 @@ export default function RootLayout({
                 "A professional boxing academy and children's home in Victoria Falls, Zimbabwe, developing fighters and transforming lives through boxing.",
               founder: {
                 "@type": "Person",
-                name: "Tobius Muposiwa",
+                name: "Tobias Mupfuti",
               },
               address: {
                 "@type": "PostalAddress",
@@ -125,12 +125,6 @@ export default function RootLayout({
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
-        <div id="fb-root" />
-        <script
-          async
-          crossOrigin="anonymous"
-          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
-        />
       </body>
     </html>
   );

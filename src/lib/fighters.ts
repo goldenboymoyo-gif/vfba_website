@@ -13,48 +13,12 @@ export interface Fighter {
 
 export const fighters: Fighter[] = [
   {
-    slug: "prince-urengwa",
-    name: "Prince Urengwa",
-    nickname: "The Diamond",
-    category: "Youth",
-    weightClass: "Pinweight",
-    image: "/images/vfba-portrait-1.jpg",
-    story:
-      "At six years old, Prince was found collecting plastic bottle tops at the Victoria Falls town dump — too poor to attend school, abandoned with only his grandmother to look after him. Tobius invited him on a morning run and changed the course of his life. By age 10, Prince became a winning Junior boxer and has since defeated every opponent in the country in his weight class.",
-    achievements: [
-      "Zimbabwe Pinweight Gold Medalist",
-      "National Junior Champion — Undefeated in Division",
-      "Youngest VFBA Fighter to Win National Title",
-    ],
-    stats: { wins: "24", losses: "0", draws: "0" },
-    quote:
-      "Before VFBA, I was at the dump collecting bottle tops. Now I collect gold medals.",
-  },
-  {
-    slug: "personal-mpofu",
-    name: "Personal Mpofu",
-    nickname: "The Warrior",
-    category: "Youth",
-    weightClass: "Paperweight",
-    image: "/images/vfba-portrait-2.jpg",
-    story:
-      "Personal came from a struggling family unable to provide for him. Inspired by Prince's transformation, he joined VFBA and found purpose through boxing. He has become one of the academy's most decorated young fighters, carrying the hopes of the entire community into the ring.",
-    achievements: [
-      "Zimbabwe Paperweight Gold Medalist",
-      "National Youth Boxing Champion",
-      "Five-Nation Championship Representative",
-    ],
-    stats: { wins: "18", losses: "2", draws: "1" },
-    quote:
-      "Boxing gave me a family when I had none. VFBA gave me a future when I had nothing.",
-  },
-  {
     slug: "lennox-chigango",
     name: "Lennox Chigango",
     nickname: "The Hurricane",
     category: "Youth",
     weightClass: "Lightweight",
-    image: "/images/vfba-training-1.jpg",
+    image: "/images/vfba-portrait-1.jpg",
     story:
       "Lennox came to VFBA as a young boy with no direction. Through boxing, he found discipline, purpose, and a future. He is now one of VFBA's most competitive youth fighters, representing the academy at national level.",
     achievements: [
@@ -67,8 +31,44 @@ export const fighters: Fighter[] = [
       "Boxing gave me what nothing else could — a reason to wake up and fight for something.",
   },
   {
-    slug: "tobius-muposiwa",
-    name: "Tobius Muposiwa",
+    slug: "crein-moyo",
+    name: "Crein Moyo",
+    nickname: "The Beast",
+    category: "Youth",
+    weightClass: "Welterweight",
+    image: "/images/vfba-portrait-2.jpg",
+    story:
+      "Crein grew up in the streets of Victoria Falls. VFBA gave him shelter, training, and a family. His aggressive style and relentless work ethic have made him one of the most exciting young fighters in the region.",
+    achievements: [
+      "Regional Tournament Medalist",
+      "VFBA Most Improved Fighter",
+      "Youth Development Programme Graduate",
+    ],
+    stats: { wins: "8", losses: "2", draws: "0" },
+    quote:
+      "When I step in the ring, I fight for every child who was told they would never be anything.",
+  },
+  {
+    slug: "bright-moyo",
+    name: "Bright Moyo",
+    nickname: "The Hope",
+    category: "Youth",
+    weightClass: "Featherweight",
+    image: "/images/vfba-community-2.jpg",
+    story:
+      "Bright is a living testament to VFBA's impact. Without the academy's support, he would likely have been lost to the streets. The academy paid his school fees and gave him a home. He now trains competitively and mentors younger boxers.",
+    achievements: [
+      "Five-Nation Tournament Participant",
+      "VFBA Academic Achievement Award",
+      "Junior Coach Mentor",
+    ],
+    stats: { wins: "6", losses: "1", draws: "2" },
+    quote:
+      "If the academy had not paid for my fees, the chances were high that I would have been into drugs. VFBA gave me hope.",
+  },
+  {
+    slug: "tobias-mupfuti",
+    name: "Tobias Mupfuti",
     nickname: "The Founder",
     category: "Coach",
     weightClass: "Head Coach",
