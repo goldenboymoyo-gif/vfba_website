@@ -31,7 +31,7 @@ function HeroSection() {
       >
         <div className="absolute inset-0">
           <Image
-            src="/images/vfba-training-session-1.jpg"
+            src="/images/rise-tobias-landscape.jpg"
             alt="VFBA boxing gym — training in Victoria Falls"
             fill
             className="object-cover object-top opacity-40"
