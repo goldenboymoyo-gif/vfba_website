@@ -23,46 +23,171 @@
   --font-body: var(--font-inter);
 }
 
-:root {
-  --lenis-height: 100%;
+@layer base {
+  :root {
+    --lenis-height: 100%;
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background-color: var(--color-rust);
+    color: var(--color-cream);
+  }
+
+  body {
+    background-color: var(--color-charcoal);
+    color: var(--color-cream);
+    font-family: var(--font-body), system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), Georgia, serif;
+  }
 }
 
-html.lenis, html.lenis body {
-  height: auto;
-}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
+  /* ===== INTERNAL SPACING ===== */
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
+  /* Standard gap below ChapterTitle or section headings */
+  .content-gap {
+    margin-top: 2rem;
+  }
+  @media (min-width: 768px) {
+    .content-gap {
+      margin-top: 2.5rem;
+    }
+  }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
+  /* Standard gap above CTA buttons in sections */
+  .cta-gap {
+    margin-top: 3rem;
+  }
+  @media (min-width: 768px) {
+    .cta-gap {
+      margin-top: 3.5rem;
+    }
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  /* ===== SPACING SYSTEM ===== */
 
-::selection {
-  background-color: var(--color-rust);
-  color: var(--color-cream);
-}
+  /* Container — max 1280px, responsive horizontal padding: 20/32/64px */
+  .site-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .site-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .site-container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
 
-body {
-  background-color: var(--color-charcoal);
-  color: var(--color-cream);
-  font-family: var(--font-body), system-ui, sans-serif;
-  overflow-x: hidden;
-}
+  /* Section — standard vertical spacing: 88/120/148px */
+  .section {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+  @media (min-width: 768px) {
+    .section {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section {
+      padding-top: 9.25rem;
+      padding-bottom: 9.25rem;
+    }
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), Georgia, serif;
+  /* Section Large — more breathing room: 112/144/176px */
+  .section-lg {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  @media (min-width: 768px) {
+    .section-lg {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-lg {
+      padding-top: 11rem;
+      padding-bottom: 11rem;
+    }
+  }
+
+  /* Section Small — tighter vertical spacing: 64/80/96px */
+  .section-sm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .section-sm {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-sm {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  /* Page Hero — inner page hero spacing */
+  .page-hero {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+  @media (min-width: 768px) {
+    .page-hero {
+      padding-top: 10rem;
+      padding-bottom: 8rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .page-hero {
+      padding-top: 12rem;
+      padding-bottom: 10rem;
+    }
+  }
 }
 
 .grain-overlay {
@@ -227,134 +352,5 @@ h1, h2, h3, h4, h5, h6 {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  /* ===== INTERNAL SPACING ===== */
-
-  /* Standard gap below ChapterTitle or section headings */
-.content-gap {
-    margin-top: 2rem;
-  }
-  @media (min-width: 768px) {
-    .content-gap {
-      margin-top: 2.5rem;
-    }
-  }
-
-  /* Ensure <section> elements have no default margin that could cause double-spacing.
-     Each section component controls its own vertical spacing via .section / .section-lg / .section-sm. */
-  section {
-    margin: 0;
-  }
-
-  /* Standard gap above CTA buttons in sections */
-  .cta-gap {
-    margin-top: 3rem;
-  }
-  @media (min-width: 768px) {
-    .cta-gap {
-      margin-top: 3.5rem;
-    }
-  }
-
-  /* ===== SPACING SYSTEM ===== */
-
-  /* Container — max 1280px, responsive horizontal padding: 20/32/64px */
-  .site-container {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  @media (min-width: 768px) {
-    .site-container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .site-container {
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
-  }
-
-  /* Section — standard vertical spacing: 88/120/148px */
-  .section {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
-  }
-  @media (min-width: 768px) {
-    .section {
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .section {
-      padding-top: 9.25rem;
-      padding-bottom: 9.25rem;
-    }
-  }
-
-  /* Section Large — more breathing room: 112/144/176px */
-  .section-lg {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-  @media (min-width: 768px) {
-    .section-lg {
-      padding-top: 9rem;
-      padding-bottom: 9rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .section-lg {
-      padding-top: 11rem;
-      padding-bottom: 11rem;
-    }
-  }
-
-  /* Section Small — tighter vertical spacing: 64/80/96px */
-  .section-sm {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  @media (min-width: 768px) {
-    .section-sm {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .section-sm {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-
-  /* Page Hero — inner page hero spacing */
-  .page-hero {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-  }
-  @media (min-width: 768px) {
-    .page-hero {
-      padding-top: 10rem;
-      padding-bottom: 8rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .page-hero {
-      padding-top: 12rem;
-      padding-bottom: 10rem;
-    }
   }
 }
