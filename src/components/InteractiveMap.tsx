@@ -6,7 +6,9 @@ export default function InteractiveMap() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    // Defer setting state to the next tick to avoid synchronous setState in effect
+    const id = window.setTimeout(() => setMounted(true), 0);
+    return () => window.clearTimeout(id);
   }, []);
 
   if (!mounted) {
