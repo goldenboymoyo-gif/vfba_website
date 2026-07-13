@@ -5,7 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
 import CTAButton from "@/components/CTAButton";
 import Image from "next/image";
-import { FiPlay, FiX } from "react-icons/fi";
+import { FiPlay, FiX, FiExternalLink } from "react-icons/fi";
 
 function VideoModal({ videoId, onClose }: { videoId: string; onClose: () => void }) {
   return (
@@ -262,6 +262,10 @@ export default function RiseFilmPage() {
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <div className="w-16 h-16 rounded-full bg-rust/30 border border-rust/50 flex items-center justify-center mb-4 group-hover:bg-rust/50 transition-colors">
                     <FiPlay size={24} className="text-cream ml-1" />
+                  </div>
+                  <div className="flex items-center gap-1.5 text-dust text-xs">
+                    <FiExternalLink size={12} />
+                    <span>Opens on BBC</span>
                   </div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5">

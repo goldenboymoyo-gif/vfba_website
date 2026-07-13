@@ -161,7 +161,7 @@ export default function ProgrammesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="relative aspect-[4/3] bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter order-2 lg:order-1">
                 <Image
-                  src="/images/vfba-community-1.jpg"
+                  src="/images/vfba-gym-action-1.jpg"
                   alt="VFBA fitness training"
                   fill
                   className="object-cover object-top"

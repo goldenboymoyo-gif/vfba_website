@@ -16,9 +16,13 @@ export default function GymPage() {
     { src: "/images/vfba-gym-real.jpg", alt: "VFBA gym interior", caption: "The main training floor at VFBA", span: "md:col-span-2 md:row-span-2" },
     { src: "/images/vfba-gym-action-1.jpg", alt: "Boxer hitting pads", caption: "Pad work — building precision", span: "" },
     { src: "/images/vfba-gym-action-2.jpg", alt: "Training in the ring", caption: "Ring training session", span: "" },
+    { src: "/images/vfba-gym-action-3.jpg", alt: "Working the heavy bag", caption: "Heavy bag work", span: "" },
+    { src: "/images/vfba-gym-life-1.jpg", alt: "Gym life", caption: "Day-to-day at the gym", span: "" },
     { src: "/images/vfba-group-training-1.jpg", alt: "Group training", caption: "Community group training", span: "md:col-span-2" },
     { src: "/images/vfba-training-session-1.jpg", alt: "Training session", caption: "Morning training session", span: "" },
     { src: "/images/vfba-coaching-1.jpg", alt: "Coach instructing", caption: "Coach Tobias guiding a fighter", span: "" },
+    { src: "/images/vfba-ring-action-1.jpg", alt: "Ring action", caption: "Inside the ring", span: "" },
+    { src: "/images/vfba-gym-clients-real.jpg", alt: "Community members", caption: "Community training at VFBA", span: "" },
   ];
 
   const gymVideos = [

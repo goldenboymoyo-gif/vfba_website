@@ -15,6 +15,9 @@ import {
   FiShare2,
   FiExternalLink,
   FiX,
+  FiTarget,
+  FiHome,
+  FiBookOpen,
 } from "react-icons/fi";
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
@@ -22,15 +25,15 @@ import CTAButton from "@/components/CTAButton";
 
 const impactAreas = [
   {
-    icon: "🥊",
+    icon: FiTarget,
     title: "Boxing Equipment",
     description:
       "Gloves, hand wraps, headgear, punching bags, rings, protective equipment and training resources for over 40 young athletes.",
-    image: "/images/vfba-gym-scene.jpg",
+    image: "/images/vfba-gym-action-1.jpg",
     imageAlt: "VFBA boxing gym with training equipment",
   },
   {
-    icon: "🏠",
+    icon: FiHome,
     title: "Children's Home",
     description:
       "Safe accommodation and daily living for orphaned and at-risk children staying at the academy — a roof, a bed, and a family.",
@@ -38,27 +41,27 @@ const impactAreas = [
     imageAlt: "Children at VFBA Children's Home",
   },
   {
-    icon: "🍽",
+    icon: FiHeart,
     title: "Nutrition",
     description:
       "Healthy meals for athletes and residents — fuelling training, growth, and the daily energy every child needs to thrive.",
-    image: "/images/vfba-community-1.jpg",
-    imageAlt: "VFBA community gathering",
+    image: "/images/vfba-children-2.jpg",
+    imageAlt: "VFBA children at the academy",
   },
   {
-    icon: "📚",
+    icon: FiBookOpen,
     title: "Education",
     description:
       "School fees, books, homework support, and educational opportunities — because the gym funds the classroom.",
-    image: "/images/vfba-training-1.jpg",
-    imageAlt: "VFBA youth training and education",
+    image: "/images/vfba-kids-training-1.jpg",
+    imageAlt: "VFBA youth programme",
   },
   {
-    icon: "🌍",
+    icon: FiGlobe,
     title: "Community Programmes",
     description:
       "Expanding youth development throughout Victoria Falls — boxing outreach, life skills, and community engagement.",
-    image: "/images/vfba-community-3.jpg",
+    image: "/images/vfba-community-event-1.jpg",
     imageAlt: "VFBA community programme",
   },
 ];
@@ -319,8 +322,8 @@ export default function SupportPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent" />
-                    <div className="absolute bottom-4 left-4 text-3xl">
-                      {area.icon}
+                    <div className="absolute bottom-4 left-4">
+                      <area.icon size={24} className="text-gold" />
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-1">

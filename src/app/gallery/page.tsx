@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ChapterTitle from "@/components/ChapterTitle";
 import Image from "next/image";
-import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiX, FiChevronLeft, FiChevronRight, FiPlay } from "react-icons/fi";
 
 const categories = ["All", "Gym Life", "Training", "Coaches", "Boxing", "Kids", "Community", "Portraits", "Tournaments"] as const;
 type Category = (typeof categories)[number];
@@ -85,6 +85,7 @@ const galleryImages: GalleryImage[] = [
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const filteredImages =
     activeCategory === "All"
@@ -213,36 +214,37 @@ export default function GalleryPage() {
           <ChapterTitle
             number="01"
             title="Video Content"
-            subtitle="Training sessions, fight nights, and gym life."
+            subtitle="Training sessions, fight nights, and the Rise documentary — watch on-site."
           />
 
           <AnimatedSection>
             <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-              <a
-                href="https://www.youtube.com/watch?v=mCbbQSTvef8"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setActiveVideo("mCbbQSTvef8")}
                 className="group relative aspect-video bg-charcoal-light rounded-sm border border-charcoal-lighter overflow-hidden hover:border-gold/20 transition-all duration-500"
               >
                 <Image
-                  src="/images/vfba-training-session-1.jpg"
-                  alt="Training at VFBA"
+                  src="/images/rise-poster.jpg"
+                  alt="Rise documentary"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <span className="text-cream text-sm font-display block">Rise Film</span>
-                  <span className="text-dust text-xs">Watch the Rise documentary</span>
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-rust/30 border border-rust/50 flex items-center justify-center mb-3 group-hover:bg-rust/50 transition-colors duration-300">
+                    <FiPlay size={22} className="text-cream ml-0.5" />
+                  </div>
+                  <span className="text-cream text-sm font-display block">Rise Documentary</span>
+                  <span className="text-dust text-xs mt-1">Watch on-site</span>
                 </div>
-              </a>
+              </button>
               <a
                 href="/rise-film"
                 className="group relative aspect-video bg-charcoal-light rounded-sm border border-charcoal-lighter overflow-hidden hover:border-gold/20 transition-all duration-500"
               >
                 <Image
-                  src="/images/rise-poster.jpg"
+                  src="/images/rise-pro-still-1.jpg"
                   alt="Rise film"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -251,7 +253,7 @@ export default function GalleryPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <span className="text-cream text-sm font-display block">The Rise Film</span>
-                  <span className="text-dust text-xs">Watch trailers &amp; behind the scenes</span>
+                  <span className="text-dust text-xs">Trailers, behind the scenes &amp; interviews</span>
                 </div>
               </a>
             </div>
@@ -330,6 +332,31 @@ export default function GalleryPage() {
             <span className="text-cream text-sm font-display">
               {filteredImages[lightboxIndex].caption}
             </span>
+          </div>
+        </div>
+      )}
+
+      {/* Video Modal — Rise Documentary */}
+      {activeVideo && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/95 backdrop-blur-sm p-4"
+          onClick={() => setActiveVideo(null)}
+        >
+          <button
+            onClick={() => setActiveVideo(null)}
+            className="absolute top-6 right-6 text-cream/60 hover:text-cream transition-colors z-10"
+            aria-label="Close video"
+          >
+            <FiX size={32} />
+          </button>
+          <div className="w-full max-w-5xl aspect-video" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0`}
+              title="Rise Documentary"
+              className="w-full h-full rounded-sm"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       )}
