@@ -572,7 +572,7 @@ function MissionSection() {
   );
 }
 
-function RiseSection() {
+function RiseSection({ onPlayTrailer }: { onPlayTrailer: () => void }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -601,7 +601,7 @@ function RiseSection() {
           </div>
         </AnimatedSection>
 
-        <Link href="/rise-film" className="block">
+        <button onClick={onPlayTrailer} className="block w-full">
           <motion.div
             style={{ scale }}
             className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter max-w-4xl mx-auto group"
@@ -623,10 +623,10 @@ function RiseSection() {
               <span className="font-display text-2xl md:text-3xl text-cream mb-2">
                 RISE
               </span>
-              <span className="text-dust text-sm">Watch the Film</span>
+              <span className="text-dust text-sm">Watch the Trailer</span>
             </div>
           </motion.div>
-        </Link>
+        </button>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14 max-w-4xl mx-auto">
           <AnimatedSection delay={0}>
@@ -764,6 +764,8 @@ function SupportSection() {
 }
 
 export default function Home() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   return (
     <>
       <HeroSection />
@@ -773,9 +775,32 @@ export default function Home() {
       <AcademyStatsSection />
       <VideoSection />
       <MissionSection />
-      <RiseSection />
+      <RiseSection onPlayTrailer={() => setActiveVideo("le7iId20SjY")} />
       <SocialSection />
       <SupportSection />
+
+      {activeVideo && (
+        <div
+          className="fixed inset-0 z-[9998] bg-charcoal/95 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setActiveVideo(null)}
+        >
+          <button
+            onClick={() => setActiveVideo(null)}
+            className="absolute top-6 right-6 text-cream/60 hover:text-cream transition-colors z-10"
+          >
+            <FiX size={32} />
+          </button>
+          <div className="w-full max-w-5xl aspect-video" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1&rel=0`}
+              title="Rise Official Trailer"
+              className="w-full h-full rounded-sm"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }
