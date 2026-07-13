@@ -122,10 +122,10 @@ export default function FightersPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 text-sm tracking-wide rounded-sm transition-all duration-300 ${
+                className={`px-5 py-2 text-xs font-medium tracking-[0.08em] uppercase rounded-sm transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-rust text-cream"
-                    : "bg-charcoal-light border border-charcoal-lighter text-dust hover:text-cream hover:border-charcoal-lighter"
+                    ? "bg-rust text-cream border border-transparent"
+                    : "bg-charcoal-light border border-charcoal-lighter text-dust hover:text-cream hover:border-cream/20"
                 }`}
               >
                 {cat}

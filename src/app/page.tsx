@@ -106,21 +106,20 @@ function HeroSection() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-rust text-cream text-sm tracking-wider uppercase rounded-sm hover:bg-rust-light transition-all duration-300"
+            className="group inline-flex items-center gap-2.5 px-8 py-4 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
           >
             Join VFBA
-            <FiArrowRight size={16} />
+            <FiArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5" />
           </Link>
           <Link
             href="/fighters"
-            className="inline-flex items-center gap-3 px-8 py-4 border border-cream/20 text-cream text-sm tracking-wider uppercase rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+            className="group inline-flex items-center gap-2.5 px-8 py-4 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
           >
-            <FiUsers size={14} />
             Meet Our Fighters
           </Link>
           <Link
             href="/about"
-            className="inline-flex items-center gap-3 px-8 py-4 border border-cream/20 text-cream text-sm tracking-wider uppercase rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+            className="group inline-flex items-center gap-2.5 px-8 py-4 bg-transparent text-cream/80 text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-cream/15 hover:text-cream hover:border-cream/30 hover:bg-cream/5 transition-all duration-300"
           >
             Explore The Academy
           </Link>

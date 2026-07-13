@@ -108,7 +108,7 @@ export default function Navigation() {
               ))}
               <Link
                 href="/support"
-                className="ml-3 px-5 py-2 bg-rust text-cream text-sm tracking-wide rounded-sm hover:bg-rust-light transition-colors duration-300"
+                className="ml-3 px-5 py-2 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
               >
                 Donate
               </Link>
@@ -164,7 +164,7 @@ export default function Navigation() {
                 <Link
                   href="/support"
                   onClick={() => setIsOpen(false)}
-                  className="mt-6 inline-flex items-center gap-2 px-8 py-3 bg-rust text-cream text-lg tracking-wide rounded-sm hover:bg-rust-light transition-colors duration-300"
+                  className="mt-6 inline-flex items-center gap-2 px-8 py-3 bg-rust text-cream text-base font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
                 >
                   Donate
                 </Link>

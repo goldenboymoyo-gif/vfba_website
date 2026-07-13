@@ -215,7 +215,7 @@ function DonationSuccessModal({
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link
                   href="/"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-rust text-cream text-sm tracking-wide rounded-sm hover:bg-rust-light transition-colors duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
                 >
                   Return Home
                   <FiArrowRight size={14} />
@@ -224,7 +224,7 @@ function DonationSuccessModal({
                   href="https://www.facebook.com/victoriafallsboxingacademy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 border border-cream/20 text-cream text-sm tracking-wide rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
                 >
                   <FiShare2 size={14} />
                   Share VFBA
@@ -280,14 +280,14 @@ export default function SupportPage() {
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <a
                 href="#ways-to-support"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-rust text-cream text-sm tracking-wider uppercase rounded-sm hover:bg-rust-light transition-all duration-300 animate-pulse-glow"
+                className="group inline-flex items-center gap-2.5 px-8 py-4 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300 animate-pulse-glow"
               >
                 <FiHeart size={16} />
                 Donate Now
               </a>
               <a
                 href="#impact"
-                className="inline-flex items-center gap-3 px-8 py-4 border border-cream/20 text-cream text-sm tracking-wider uppercase rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+                className="group inline-flex items-center gap-2.5 px-8 py-4 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
               >
                 See Where It Goes
                 <FiArrowRight size={14} />
@@ -661,7 +661,7 @@ export default function SupportPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => setShowSuccess(true)}
-                className="inline-flex items-center gap-3 px-8 py-4 bg-rust text-cream text-sm tracking-wider uppercase rounded-sm hover:bg-rust-light transition-all duration-300"
+                className="group inline-flex items-center gap-2.5 px-8 py-4 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
               >
                 <FiHeart size={16} />
                 Donate Now

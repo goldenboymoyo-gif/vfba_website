@@ -116,7 +116,7 @@ export default function TournamentsPage() {
                   href="https://www.facebook.com/victoriafallsboxingacademy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2 bg-rust text-cream text-sm rounded-sm hover:bg-rust-light transition-colors duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-2 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
                 >
                   Facebook
                 </a>
@@ -124,7 +124,7 @@ export default function TournamentsPage() {
                   href="https://www.instagram.com/victoriafallsboxingacademy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2 border border-cream/20 text-cream text-sm rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-2 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
                 >
                   Instagram
                 </a>

@@ -104,7 +104,7 @@ export default function ContactPage() {
                   href="https://www.facebook.com/victoriafallsboxingacademy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-rust text-cream text-sm rounded-sm hover:bg-rust-light transition-colors duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-rust text-cream text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-transparent hover:bg-rust-light hover:shadow-[0_8px_30px_-6px_rgba(139,58,42,0.5)] transition-all duration-300"
                 >
                   Facebook
                 </a>
@@ -112,13 +112,13 @@ export default function ContactPage() {
                   href="https://www.instagram.com/victoriafallsboxingacademy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 border border-cream/20 text-cream text-sm rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
                 >
                   Instagram
                 </a>
                 <a
                   href="mailto:info@victoriafallsboxingacademy.org"
-                  className="px-6 py-3 border border-cream/20 text-cream text-sm rounded-sm hover:border-cream/40 hover:bg-cream/5 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-gold text-sm font-medium tracking-[0.08em] uppercase rounded-sm border border-gold/40 hover:bg-gold/10 hover:border-gold/60 transition-all duration-300"
                 >
                   Email
                 </a>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                   href="https://maps.app.goo.gl/Gq7yi5L1vs7J1sCb7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute bottom-4 right-4 z-[999] inline-flex items-center gap-2 px-4 py-2 bg-charcoal/90 backdrop-blur-sm border border-charcoal-lighter text-cream text-sm rounded-sm hover:bg-charcoal-lighter transition-colors duration-300"
+                  className="absolute bottom-4 right-4 z-[999] inline-flex items-center gap-2 px-4 py-2 bg-charcoal/90 backdrop-blur-sm border border-charcoal-lighter text-cream/80 text-xs font-medium tracking-[0.08em] uppercase rounded-sm hover:text-cream hover:border-cream/30 hover:bg-cream/5 transition-all duration-300"
                 >
                   <FiExternalLink size={14} />
                   Open in Google Maps
