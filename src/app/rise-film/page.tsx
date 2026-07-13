@@ -60,7 +60,10 @@ export default function RiseFilmPage() {
       <section className="section border-t border-charcoal-lighter/30">
         <div className="site-container">
           <AnimatedSection>
-            <div className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer">
+            <div
+              className="relative aspect-video bg-charcoal-light rounded-sm overflow-hidden border border-charcoal-lighter group cursor-pointer"
+              onClick={() => setActiveVideo("le7iId20SjY")}
+            >
               <div className="absolute inset-0">
                 <Image
                   src="/images/rise-poster.jpg"
@@ -78,15 +81,8 @@ export default function RiseFilmPage() {
                 <span className="font-display text-2xl md:text-3xl text-cream mb-2">
                   RISE
                 </span>
-                <span className="text-dust text-sm">Official Rise Website</span>
+                <span className="text-dust text-sm">Watch the Official Trailer</span>
               </div>
-              <a
-                href="https://risezimbabwe.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 z-10"
-                aria-label="Visit official Rise website"
-              />
             </div>
           </AnimatedSection>
         </div>

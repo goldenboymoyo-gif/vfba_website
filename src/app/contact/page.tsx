@@ -164,9 +164,6 @@ export default function ContactPage() {
                 to the Rise production team directly.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-                <CTAButton href="https://risezimbabwe.com" variant="secondary" showArrow>
-                  Visit Rise Website
-                </CTAButton>
                 <CTAButton href="/rise-film" variant="secondary" showArrow>
                   Rise Film Page
                 </CTAButton>
